@@ -1,1 +1,1 @@
-## client blog app
+## client blog
