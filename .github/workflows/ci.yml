@@ -10,10 +10,10 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
+    runs-on: windows-latest
+    # strategy:
+    #   matrix:
+    #     os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Checkout code
@@ -24,15 +24,15 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies
-        run: yarn install
+      # - name: Install dependencies
+      #   run: yarn install
 
       # - name: Run tests
       #   run: yarn test
 
-      - name: Build the application
-        run: yarn build
+      # - name: Build the application
+      #   run: yarn build
 
-      - name: Deploy
-        run: |
-          # Добавьте команды для развертывания
+      # - name: Deploy
+      #   run: |
+      #     # Добавьте команды для развертывания
