@@ -1,5 +1,6 @@
 'use client';
 
+import { LocaleSwitcher } from 'clients-blogs-ui-kit';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -8,7 +9,7 @@ const locales = [
   { code: 'ru', label: 'RU' },
 ];
 
-export const LocaleSwitcher = () => {
+export const LocaleSwitche = () => {
   const currentLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -19,18 +20,10 @@ export const LocaleSwitcher = () => {
   };
 
   return (
-    <div className="relative">
-      <select
-        value={currentLocale}
-        onChange={(e) => handleLocaleChange(e.target.value)}
-        className="text-light cursor-pointer bg-darkBG border border-light rounded p-1"
-      >
-        {locales.map((locale) => (
-          <option key={locale.code} value={locale.code}>
-            {locale.label}
-          </option>
-        ))}
-      </select>
-    </div>
+    <LocaleSwitcher
+      locales={locales}
+      onLocaleChange={handleLocaleChange}
+      current={currentLocale}
+    />
   );
 };

@@ -1,13 +1,13 @@
-import { useTranslations } from 'next-intl';
+import { IntroSection } from './_components/IntroSection';
+import { AboutSection } from './_components/AboutSection';
+import { JoinSection } from '@/app/components/joinSection/joinSection';
 
 export default function PrivacyPolicy() {
-  const t = useTranslations('about');
-
   return (
-    <section className="font-sen">
-      <div className="bg-lavanderBG flex flex-col items-center min-h-[10rem] justify-center">
-        <h2 className="text-dark text-4xl font-bold">{t('headline')}</h2>
-      </div>
-    </section>
+    <div className="font-sen wrapper-component">
+      <IntroSection />
+      <AboutSection />
+      <JoinSection />
+    </div>
   );
 }

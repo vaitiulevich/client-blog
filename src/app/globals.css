@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner-shadow {
+  box-shadow: inset 10rem 2rem 18rem #000;
+}
+.wrapper-component {
+  padding: 0 5%;
+}
+
+.figure-radius {
+  border-radius: 37px 0 0 0;
+}
+.figure-circle-radius {
+  border-radius: 50rem;
+}

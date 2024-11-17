@@ -3,14 +3,69 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Video about us"
   },
+  "footer": {
+    "logoTitle": "Modsen Client Blog",
+    "formTitle": "Subscribe to our news letter to get latest updates and news",
+    "address": "Finstreet 118 2561 Fintown",
+    "contacts": "Hello@finsweet.com  020 7993 2905",
+    "formSubscribe": {
+      "errorValidation": "Incorrect Email",
+      "formInputPlaceholder": "Enter Your Email",
+      "errorSubmit": "Error with Subscrition",
+      "successfulSubmit": "Successful subscription",
+      "submitButtonTitle": "Subscribe",
+      "loadSubmitButtonTitle": "Sending.."
+    }
+  },
   "hero": {
-    "headline": "Step-by-step guide to choosing great font pairs",
-    "subtitle": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-    "upperHeadline": "Posted on startup",
+    "upperHeadline": "Posted on ",
     "readMoreButtonTitle": "Read More"
   },
+  "join": {
+    "title": "Join our team to be a part of our story",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "joinButtonTitle": "Join Now"
+  },
   "about": {
-    "headline": "Anout us"
+    "aboutIntro": {
+      "upperHeadline": "About us",
+      "headline": "We are a team of content writers who share their learnings",
+      "introDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "metrics": {
+        "blogsPublished": {
+          "title": "Blogs Published",
+          "indicator": "12+"
+        },
+        "viewsOnFinsweet": {
+          "title": "Views on Finsweet",
+          "indicator": "18K+"
+        },
+        "totalActiveUsers": {
+          "title": "Total active Users",
+          "indicator": "30K+"
+        }
+      },
+      "filosofy": {
+        "OurMision": {
+          "upperTitle": "Our mision",
+          "title": "Creating valuable content for creatives all around the world",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        },
+        "OurVision": {
+          "upperTitle": "Our Vision",
+          "title": "A platform that empowers individuals to improve",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        }
+      }
+    },
+    "aboutSection": {
+      "aboutTeamTitle": "Our team of creatives",
+      "aboutTeamSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "aboutTeamDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "aboutReasonTitle": "Why we started this Blog",
+      "aboutReasonSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "aboutReasonDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
   },
   "policy": {
     "headline": "Privacy Policy",
