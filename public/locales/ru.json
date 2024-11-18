@@ -3,6 +3,19 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Видео о нас"
   },
+  "allPosts": {
+    "postList": {
+      "title": "Посты",
+      "linkAll": "Больше"
+    },
+    "featuredPost": {
+      "title": "Рекомендуемый пост",
+      "moreButtonTitle": "Подробнее"
+    }
+  },
+  "author": {
+    "title": "Привет, Я {name} и добро пожаловать в мой блог"
+  },
   "footer": {
     "logoTitle": "Блог клиентов Modsen",
     "formTitle": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",

@@ -1,14 +1,4 @@
-interface Post {
-  id: number;
-  title: string;
-}
-async function fetchPosts(): Promise<Post[]> {
-  const res = await fetch('http://localhost:3001/posts');
-  if (!res.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return res.json();
-}
+import { fetchPosts } from '@/api/posts';
 
 export default async function PrivacyPolicy() {
   const posts = await fetchPosts();

@@ -3,6 +3,19 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Video about us"
   },
+  "allPosts": {
+    "postList": {
+      "title": "All Posts",
+      "linkAll": "View All"
+    },
+    "featuredPost": {
+      "title": "Featured Post",
+      "moreButtonTitle": "Read More"
+    }
+  },
+  "author": {
+    "title": "Hey there, I’m {name} and welcome to my Blog"
+  },
   "footer": {
     "logoTitle": "Modsen Client Blog",
     "formTitle": "Subscribe to our news letter to get latest updates and news",

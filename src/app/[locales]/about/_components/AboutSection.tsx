@@ -7,7 +7,7 @@ export const AboutSection = () => {
   const t = useTranslations('about.aboutSection');
 
   return (
-    <section>
+    <section className=" wrapper-component">
       <div className="flex items-center justify-between my-16">
         <div className="w-[45%]">
           <h3 className="text-3xl font-bold">{t('aboutTeamTitle')}</h3>
@@ -15,14 +15,14 @@ export const AboutSection = () => {
           <p className="text-grey text-sm">{t('aboutTeamDescription')}</p>
         </div>
         <div className="w-[45%] relative">
-          <div className="bg-yellow figure-radius h-24 w-20 absolute top-20 right-[30rem]"></div>
+          <div className="bg-yellow figure-radius h-24 w-20 absolute top-20 right-[90%]"></div>
           <Image src={teamImg} alt="team" />
         </div>
       </div>
       <div className="flex items-center justify-between my-16">
         <div className="w-[45%] relative">
           <Image src={reasonImg} alt="reason" />
-          <div className="bg-purpure figure-circle-radius h-20 w-20 absolute top-[22rem] left-16"></div>
+          <div className="bg-purpure figure-circle-radius h-20 w-20 absolute bottom-[-10%] left-16"></div>
         </div>
         <div className="w-[45%]">
           <h3 className="text-3xl font-bold">{t('aboutReasonTitle')}</h3>

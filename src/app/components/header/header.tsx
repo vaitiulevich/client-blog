@@ -1,7 +1,7 @@
-import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
 import { NavigationMenu } from '../navigationMenu/navigationMenu';
 import { LocaleSwitche } from '../localeSwitcher/LocaleSwitcher';
+import { VideoModalButton } from '../videoModalButton/videoModalButton';
 
 export const Header = () => {
   const t = useTranslations('header');
@@ -15,7 +15,7 @@ export const Header = () => {
           {/* <div className="hidden md:block"> */}
           <LocaleSwitche />
           <NavigationMenu />
-          <Button label={t('videoButtonTitle')} backgroundColor="bg-light" />
+          <VideoModalButton />
         </div>
         {/* <div className="hidden md:block">
           <nav className="flex items-center space-x-4">

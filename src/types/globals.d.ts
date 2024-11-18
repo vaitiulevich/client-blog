@@ -23,4 +23,5 @@ type Author = {
   name: string;
   description: string;
   avatar: string;
+  company: string;
 };

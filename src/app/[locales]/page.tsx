@@ -1,13 +1,15 @@
-import { useTranslations } from 'next-intl';
-import { Hero } from '../components/hero/hero';
-import { JoinSection } from '../components/joinSection/joinSection';
+import { Hero } from '@app/components/hero/hero';
+import { JoinSection } from '@app/components/joinSection/joinSection';
+import { AuthorsList } from '@app/components/authorsList/authorsList';
+import { AllPostsSection } from '@app/components/allPostsSection/allPostsSection';
+import { countAuthorsHome } from '@/constants/constants';
 
 export default function Home() {
-  const t = useTranslations();
   return (
-    <div className="">
+    <div className="font-dark">
       <Hero />
-      <h1>{t('welcome')}</h1>
+      <AllPostsSection />
+      <AuthorsList limit={countAuthorsHome} />
       <JoinSection />
     </div>
   );

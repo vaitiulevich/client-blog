@@ -8,7 +8,12 @@
   box-shadow: inset 10rem 2rem 18rem #000;
 }
 .wrapper-component {
-  padding: 0 5%;
+  padding: 0 10%;
+}
+@media (max-width: 768px) {
+  .wrapper-component {
+    padding: 0 2%;
+  }
 }
 
 .figure-radius {

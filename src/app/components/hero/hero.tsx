@@ -1,7 +1,9 @@
+import { fetchAuthorById } from '@/api/authors';
 import { PostInfoBlock } from '../postInfoBlock/postInfoBlock';
+import { fetchPostById } from '@/api/posts';
 
 export const Hero = async () => {
-  const post = await fetchPost();
+  const post = await fetchPostById(1);
   const { banner, authorId } = post;
   const { name } = await fetchAuthorById(authorId);
 
@@ -14,19 +16,3 @@ export const Hero = async () => {
     </div>
   );
 };
-
-async function fetchPost(): Promise<Post> {
-  const res = await fetch('http://localhost:3001/posts/1');
-  if (!res.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return res.json();
-}
-
-async function fetchAuthorById(id: number): Promise<Author> {
-  const res = await fetch(`http://localhost:3001/authors/${id}`);
-  if (!res.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return res.json();
-}

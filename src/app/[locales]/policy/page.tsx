@@ -1,13 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-// interface Article {
-//   articleTitle: string;
-//   articleP: string[];
-// }
-
 export default function PrivacyPolicy() {
   const t = useTranslations('policy');
-  // const articles: Article[] = t('articles') as unknown as Article[];
 
   return (
     <section className="font-sen">
@@ -20,14 +14,6 @@ export default function PrivacyPolicy() {
           {t('articleTitle')}
         </h3>
         <p className="font-inter mt-5 text-grey text-sm">{t('articleP')}</p>
-        {/* {articles.map((article, index) => (
-          <div key={index} className="article">
-            <h2>{article.articleTitle}</h2>
-            {article.articleP.map((paragraph, ind) => (
-              <p key={ind}>{paragraph}</p>
-            ))}
-          </div>
-        ))} */}
       </div>
     </section>
   );

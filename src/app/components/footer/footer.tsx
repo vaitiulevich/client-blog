@@ -27,7 +27,7 @@ export const Footer = () => {
           <p>{t('address')}</p>
           <p>{t('contacts')}</p>
         </div>
-        <SocialLinks />
+        <SocialLinks bgColor="light" />
       </div>
     </footer>
   );

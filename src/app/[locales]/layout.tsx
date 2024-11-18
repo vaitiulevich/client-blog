@@ -1,8 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { Header } from '../components/header/header';
-import '../globals.css';
+import { Header } from '@app/components/header/header';
 import { getMessages } from 'next-intl/server';
-import { Footer } from '../components/footer/footer';
+import { Footer } from '@app/components/footer/footer';
+import '../globals.css';
 
 export default async function RootLayout({
   children,

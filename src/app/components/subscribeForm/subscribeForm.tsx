@@ -43,7 +43,7 @@ export const SubscribeForm = () => {
   };
 
   return (
-    <Form action={handleAction}>
+    <Form className="flex items-start h-16 gap-4" action={handleAction}>
       <ControlledInput
         {...register('email')}
         type="email"
