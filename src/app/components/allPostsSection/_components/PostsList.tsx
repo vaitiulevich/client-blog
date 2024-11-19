@@ -1,7 +1,6 @@
-import { fetchAuthorById } from '@/api/authors';
 import { Link } from '@/i18n/routing';
-import { AuthorDate } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
+import { PostListItem } from './PostListItem';
 interface PostsListProps {
   posts: Post[];
 }
@@ -16,18 +15,9 @@ export const PostsList = ({ posts }: PostsListProps) => {
         </Link>
       </div>
       <div className="flex flex-col justify-between h-[90%]">
-        {posts.map(async (post) => {
-          const { name } = await fetchAuthorById(post.authorId);
-          return (
-            <div
-              key={post.id}
-              className="p-4 hover:bg-yellowOpasity cursor-pointer"
-            >
-              <AuthorDate author={name} date={new Date(post.publishDate)} />
-              <h3 className="text-xl font-semibold mt-1">{post.title}</h3>
-            </div>
-          );
-        })}
+        {posts.map(async (post) => (
+          <PostListItem post={post} key={post.id} />
+        ))}
       </div>
     </div>
   );

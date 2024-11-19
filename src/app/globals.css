@@ -16,6 +16,15 @@
   }
 }
 
+.doublewrap-component {
+  padding: 0 20%;
+}
+@media (max-width: 768px) {
+  .doublewrap-component {
+    padding: 0 5%;
+  }
+}
+
 .figure-radius {
   border-radius: 37px 0 0 0;
 }

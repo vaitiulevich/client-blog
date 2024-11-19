@@ -10,7 +10,7 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
   const { name, avatar, description, instagramm, facebook, twitter, linkedin } =
     author;
   return (
-    <div className="wrapper-component">
+    <div>
       <div className="py-16 flex justify-between items-center gap-8">
         <div className="relative h-[15rem] w-[30%]">
           <Image

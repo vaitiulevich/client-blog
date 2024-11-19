@@ -12,3 +12,16 @@ export const fetchPostById = async (id: number): Promise<Post> => {
 export const fetchPostsWithLimit = async (limit: number): Promise<Post[]> => {
   return apiRequest<Post[]>(`${endpoints.postsWithLimit}${limit}`);
 };
+
+export const fetchPostsByCategory = async (
+  category: string,
+  limit: number
+): Promise<Post[]> => {
+  return apiRequest<Post[]>(
+    `${endpoints.posts}?category=${category}&_limit=${limit}`
+  );
+};
+
+export const fetchAuthorsPosts = async (id: number): Promise<Post[]> => {
+  return apiRequest<Post[]>(`${endpoints.postsByAuthor}${id}`);
+};

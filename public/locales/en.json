@@ -3,6 +3,12 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Video about us"
   },
+  "recomended": {
+    "title": "What to read next"
+  },
+  "post": {
+    "postedTitle": "Posted on "
+  },
   "contacts": {
     "headline": "Let’s Start a Conversation",
     "upperHeadline": "Contact us",
@@ -122,6 +128,5 @@
         ]
       }
     ]
-  },
-  "welcome": "Welcome to my app!"
+  }
 }

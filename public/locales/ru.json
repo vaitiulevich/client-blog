@@ -3,29 +3,57 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Видео о нас"
   },
+  "recomended": {
+    "title": "проситать следующим"
+  },
+  "post": {
+    "postedTitle": "Опублековано "
+  },
   "allPosts": {
     "postList": {
       "title": "Посты",
-      "linkAll": "Больше"
+      "linkAll": "Посмотреть все"
     },
     "featuredPost": {
       "title": "Рекомендуемый пост",
       "moreButtonTitle": "Подробнее"
     }
   },
+  "contacts": {
+    "headline": "Давайте начнем общение",
+    "upperHeadline": "Свяжитесь с нами",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "worhingTitle": "Часы работы",
+    "contactTitle": "Свяжитесь с нами",
+    "workingDaysTitle": "С понедельника по пятницу",
+    "workingHoursTitle": "С 9:00 до 20:00",
+    "workingSupportTitle": "Наша служба поддержки доступна 24/7",
+    "formContact": {
+      "sendButtonTitle": "Отправить сообщение",
+      "loadSendButtonTitle": "Загрузка...",
+      "namePlaceholder": "Полное имя",
+      "emailPlaceholder": "Ваш email",
+      "successMessage": "Подписка успешна!",
+      "errorMessage": "Не удалось отправить. Пожалуйста, попробуйте снова.",
+      "relatedPlaceholder": "Тема запроса",
+      "messagePlaceholder": "Сообщение"
+    }
+  },
   "author": {
     "title": "Привет, Я {name} и добро пожаловать в мой блог"
   },
   "footer": {
-    "logoTitle": "Блог клиентов Modsen",
+    "logoTitle": "Modsen Client Blog",
     "formTitle": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
     "address": "Финстрит 118, 2561 Финтаун",
     "contacts": "Hello@finsweet.com  020 7993 2905",
     "formSubscribe": {
-      "errorValidation": "Некорректный Email",
-      "formInputPlaceholder": "Введите ваш Email",
+      "errorValidation": "Неверный email",
+      "formInputPlaceholder": "Введите ваш email",
       "errorSubmit": "Ошибка при подписке",
-      "successfulSubmit": "Подписка успешно оформлена",
+      "successfulSubmit": "Подписка успешна",
+      "successMessage": "Подписка успешно оформлена!",
+      "errorMessage": "Не удалось отправить. Пожалуйста, попробуйте снова.",
       "submitButtonTitle": "Подписаться",
       "loadSubmitButtonTitle": "Отправка..."
     }
@@ -100,6 +128,5 @@
         ]
       }
     ]
-  },
-  "welcome": "ввв!"
+  }
 }

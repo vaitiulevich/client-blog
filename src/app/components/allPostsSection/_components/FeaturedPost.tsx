@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import { AuthorDatePanel } from '@app/components/AuthorDatePanel/AuthorDatePanel';
 import { useTranslations } from 'next-intl';
-import { Button } from 'clients-blogs-ui-kit';
+// import { Button } from 'clients-blogs-ui-kit';
+import { ButtonNavigate } from '../../buttonNavigate/buttonNavigate';
 
 interface FeaturedPostProps {
   post: Post;
 }
 export const FeaturedPost = ({ post }: FeaturedPostProps) => {
   const t = useTranslations('allPosts.featuredPost');
-  const { banner, title, authorId, publishDate, content } = post;
+  const { banner, title, authorId, publishDate, content, id } = post;
   const { subtitle } = content[0];
   return (
     <div className="w-[50%]">
@@ -28,7 +29,7 @@ export const FeaturedPost = ({ post }: FeaturedPostProps) => {
           <AuthorDatePanel authorId={authorId} date={new Date(publishDate)} />
           <h3 className="text-xl font-semibold">{title}</h3>
           <p className="text-sm text-grey">{subtitle}</p>
-          <Button label={t('moreButtonTitle')} isNavigate={true} />
+          <ButtonNavigate path={`/post/${id}`} text={t('moreButtonTitle')} />
         </div>
       </div>
     </div>

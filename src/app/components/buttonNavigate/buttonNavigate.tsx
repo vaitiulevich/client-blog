@@ -14,5 +14,7 @@ export const ButtonNavigate = ({
   const handleNavigateToPost = () => {
     router.push(path);
   };
-  return <Button label={text} onClick={handleNavigateToPost} />;
+  return (
+    <Button label={text} isNavigate={true} onClick={handleNavigateToPost} />
+  );
 };
