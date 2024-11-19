@@ -1,13 +1,14 @@
+import { endpoints } from '@/constants/endpoints';
 import { apiRequest } from './apiRequest';
 
-export async function fetchPosts(): Promise<Post[]> {
-  return apiRequest<Post[]>('/posts');
-}
+export const fetchPosts = async (): Promise<Post[]> => {
+  return apiRequest<Post[]>(endpoints.posts);
+};
 
-export async function fetchPostById(id: number): Promise<Post> {
-  return apiRequest<Post>(`/posts/${id}`);
-}
+export const fetchPostById = async (id: number): Promise<Post> => {
+  return apiRequest<Post>(`${endpoints.posts}/${id}`);
+};
 
-export async function fetchPostsWithLimit(limit: number): Promise<Post[]> {
-  return apiRequest<Post[]>(`/posts?_limit=${limit}`);
-}
+export const fetchPostsWithLimit = async (limit: number): Promise<Post[]> => {
+  return apiRequest<Post[]>(`${endpoints.postsWithLimit}${limit}`);
+};

@@ -1,13 +1,13 @@
 'use client';
 
 import { Button, ControlledInput } from 'clients-blogs-ui-kit';
-import Form from 'next/form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { useFormStatus } from 'react-dom';
-import emailjs from 'emailjs-com';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { Popup } from '@app/components/popup/popup';
+import { sendSubscribeEmail } from '@/utils/sendSubscribeEmail';
 
 const emailSchema = z.object({
   email: z.string().email('Invalid email'),
@@ -16,46 +16,67 @@ const emailSchema = z.object({
 type EmailFormData = z.infer<typeof emailSchema>;
 
 export const SubscribeForm = () => {
-  const { pending } = useFormStatus();
   const t = useTranslations('footer.formSubscribe');
   const {
     register,
+    handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<EmailFormData>({
     resolver: zodResolver(emailSchema),
   });
 
-  const handleAction = async (formData: FormData) => {
-    const email = formData.get('email') as string;
+  const [popup, setPopup] = useState<{
+    message: string | null;
+    type: 'success' | 'error';
+  }>({
+    message: null,
+    type: 'success',
+  });
+
+  const handleAction = async (data: EmailFormData) => {
+    setPopup({ message: null, type: 'success' });
 
     try {
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-      const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
-
-      await emailjs.send(serviceId, templateId, { to_email: email }, userId);
-
+      await sendSubscribeEmail(data.email);
+      setPopup({ message: t('successMessage'), type: 'success' });
       reset();
     } catch (error) {
       console.error(error);
+      setPopup({ message: t('errorMessage'), type: 'error' });
+    } finally {
     }
   };
 
+  const closePopup = () => setPopup({ message: null, type: 'success' });
+
   return (
-    <Form className="flex items-start h-16 gap-4" action={handleAction}>
-      <ControlledInput
-        {...register('email')}
-        type="email"
-        placeholder={t('formInputPlaceholder')}
-        disabled={pending}
-        error={errors.email ? errors.email.message : undefined}
+    <div className="relative">
+      <Popup
+        isOpen={!!popup.message}
+        message={popup.message}
+        type={popup.type}
+        onClose={closePopup}
       />
-      <Button
-        type="submit"
-        label={pending ? t('loadSubmitButtonTitle') : t('submitButtonTitle')}
-        disabled={pending}
-      />
-    </Form>
+      <form
+        className="flex gap-4 items-start"
+        onSubmit={handleSubmit(handleAction)}
+      >
+        <ControlledInput
+          register={register('email')}
+          type="email"
+          placeholder={t('formInputPlaceholder')}
+          disabled={isSubmitting}
+          error={errors.email?.message}
+        />
+        <Button
+          type="submit"
+          label={
+            isSubmitting ? t('loadSubmitButtonTitle') : t('submitButtonTitle')
+          }
+          disabled={isSubmitting}
+        />
+      </form>
+    </div>
   );
 };

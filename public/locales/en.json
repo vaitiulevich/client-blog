@@ -3,6 +3,26 @@
     "logoTitle": "Modsen Client Blog",
     "videoButtonTitle": "Video about us"
   },
+  "contacts": {
+    "headline": "Let’s Start a Conversation",
+    "upperHeadline": "Contact us",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "worhingTitle": "Working hours",
+    "contactTitle": "Contact Us",
+    "workingDaysTitle": "Monday To Friday",
+    "workingHoursTitle": "9:00 AM to 8:00 PM ",
+    "workingSupportTitle": "Our Support Team is available 24/7",
+    "formContact": {
+      "sendButtonTitle": "Send Message",
+      "loadSendButtonTitle": "Loading..",
+      "namePlaceholder": "Full Name",
+      "emailPlaceholder": "Your Email",
+      "successMessage": "Subscription successful!",
+      "errorMessage": "Failed to send. Please try again.",
+      "relatedPlaceholder": "Query Related",
+      "messagePlaceholder": "Message"
+    }
+  },
   "allPosts": {
     "postList": {
       "title": "All Posts",
@@ -26,6 +46,8 @@
       "formInputPlaceholder": "Enter Your Email",
       "errorSubmit": "Error with Subscrition",
       "successfulSubmit": "Successful subscription",
+      "successMessage": "Subscription successful!",
+      "errorMessage": "Failed to send. Please try again.",
       "submitButtonTitle": "Subscribe",
       "loadSubmitButtonTitle": "Sending.."
     }

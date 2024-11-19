@@ -11,11 +11,17 @@ export const navItems = [
   { label: { en: 'Home', ru: 'Главная' }, href: '/' },
   { label: { en: 'Blog', ru: 'Блог' }, href: '#' },
   { label: { en: 'About Us', ru: 'О нас' }, href: '/about' },
-  { label: { en: 'Contact us', ru: 'Контакты' }, href: '#' },
+  { label: { en: 'Contact us', ru: 'Контакты' }, href: '/contacts' },
   {
     label: { en: 'Privacy Policy', ru: 'Наша Политика' },
     href: '/policy',
   },
+];
+
+export const relatedList = [
+  { value: 'organization', label: 'Organization' },
+  { value: 'company', label: 'Company' },
+  { value: 'other', label: 'Other' },
 ];
 
 export const linkToVideo =

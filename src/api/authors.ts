@@ -1,11 +1,14 @@
+import { endpoints } from '@/constants/endpoints';
 import { apiRequest } from './apiRequest';
 
-export async function fetchAuthorById(id: number): Promise<Author> {
-  const url = `/authors/${id}`;
+export const fetchAuthorById = async (id: number): Promise<Author> => {
+  const url = `${endpoints.authors}/${id}`;
   return apiRequest<Author>(url);
-}
+};
 
-export async function fetchAuthorsWithLimit(limit: number): Promise<Author[]> {
-  const url = `/authors?_limit=${limit}`;
+export const fetchAuthorsWithLimit = async (
+  limit: number
+): Promise<Author[]> => {
+  const url = `${endpoints.authorsWithLimit}${limit}`;
   return apiRequest<Author[]>(url);
-}
+};
