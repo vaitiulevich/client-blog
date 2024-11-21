@@ -9,7 +9,7 @@ export const locales = [
 
 export const navItems = [
   { label: { en: 'Home', ru: 'Главная' }, href: '/' },
-  { label: { en: 'Blog', ru: 'Блог' }, href: '/blog' },
+  { label: { en: 'Blog', ru: 'Блог' }, href: '/blog/page/1' },
   { label: { en: 'About Us', ru: 'О нас' }, href: '/about' },
   { label: { en: 'Contact us', ru: 'Контакты' }, href: '/contacts' },
   {
@@ -26,3 +26,5 @@ export const relatedList = [
 
 export const linkToVideo =
   'https://www.youtube.com/embed/zRp4NS_eeGc?si=eBewL0UfTbOZZG4S&autoplay=1';
+
+export const postsPerPage = 4;

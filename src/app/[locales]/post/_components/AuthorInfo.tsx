@@ -24,14 +24,15 @@ export const AuthorInfo = ({
   return (
     <div className="flex gap-4">
       <div className="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full">
-        <Image
-          src={avatar}
-          alt={authorName}
-          layout="responsive"
-          width={50}
-          height={50}
-          className="object-cover w-full h-full"
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src={avatar}
+            alt={authorName}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+          />
+        </div>
       </div>
       <div>
         <h3 className="text-purpure text-xl font-bold">{authorName}</h3>

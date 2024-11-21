@@ -15,7 +15,7 @@ export const AuthorsList = async ({ limit }: AuthorsListProps) => {
       <div className="grid grid-cols-4 gap-4">
         {data.map((item) => (
           <div
-            className="flex flex-col items-center justify-start gap-1 bg-gray-100 px-4 py-8 hover:bg-yellowOpasity"
+            className="flex flex-col items-center justify-start gap-1 bg-gray-100 px-4 py-8 hover:bg-yellowOpasity transition duration-300 ease-in-out"
             key={item.id}
           >
             <Link

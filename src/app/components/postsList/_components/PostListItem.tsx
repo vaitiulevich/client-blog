@@ -6,12 +6,12 @@ export const PostListItem = ({ post }: { post: Post }) => {
   const { subtitle } = content[0];
   return (
     <div className="flex items-center gap-6 mb-10">
-      <div className="relative h-[17rem] w-[40%]">
+      <div className="relative h-[17rem] w-[35%]">
         <Image
           className="absolute top-0 left-0 w-full h-full object-cover"
           src={banner}
           alt={title}
-          layout="fill"
+          fill
           priority
         />
       </div>

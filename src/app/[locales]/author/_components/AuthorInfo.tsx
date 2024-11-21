@@ -17,7 +17,8 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={avatar}
             alt={name}
-            layout="fill"
+            width={400}
+            height={400}
             priority
           />
         </div>

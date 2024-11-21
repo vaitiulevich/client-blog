@@ -128,5 +128,35 @@
         ]
       }
     ]
+  },
+  "home": {
+    "categoryTitle": "Choose A Catagory",
+    "filosofy": {
+      "AboutUs": {
+        "upperTitle": "ABOUT US",
+        "title": "We are a community of content writers who share their learnings",
+        "moreButtonTitle": "Read More",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "OurMision": {
+        "upperTitle": "Our mision",
+        "title": "Creating valuable content for creatives all around the world",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    }
+  },
+  "aboutSection": {
+    "upperHeadline": "Why we started ",
+    "headline": "It started out as a simple idea and evolved into our passion",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "buttonTitle": "Discover our story"
+  },
+  "featuredSection": {
+    "upperHeadline": "We are",
+    "headline": "Featured in"
+  },
+  "pagination": {
+    "prev": "< Prev ",
+    "next": "Next >"
   }
 }

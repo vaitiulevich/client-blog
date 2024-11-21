@@ -9,14 +9,13 @@ export const RecomendedPostItem = ({ post }: RecomendedPostItemProps) => {
   const { subtitle } = content[0];
   return (
     <div>
-      <div className="w-[100%] h-[13rem] flex items-center justify-center overflow-hidden my-4">
+      <div className="w-full h-[13rem] flex items-center justify-center overflow-hidden my-4 relative">
         <Image
           src={banner}
           alt="banner"
-          layout="responsive"
-          width={50}
-          height={50}
-          className="object-cover w-full h-full"
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
         />
       </div>
       <AuthorDatePanel authorId={authorId} date={new Date(publishDate)} />

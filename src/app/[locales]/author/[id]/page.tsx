@@ -1,10 +1,7 @@
 import { fetchAuthorById } from '@/api/authors';
 import { fetchAuthorsPosts } from '@/api/posts';
 import { PostsList } from '@/app/components/postsList/postsList';
-// import { HrPanel } from '@/app/components/hrPanel/hrPanel';
-// import { SocialLinks } from '@/app/components/socialLinks/socialLinks';
 import { AuthorInfo } from '@app/[locales]/author/_components/AuthorInfo';
-// import { useTranslations } from 'next-intl';
 
 export default async function AuthorPage({
   params,
@@ -14,9 +11,7 @@ export default async function AuthorPage({
   const { id } = await params;
   const author = await fetchAuthorById(+id);
   const posts = await fetchAuthorsPosts(+id);
-  // console.log(posts);
 
-  // const t = useTranslations('author');
   return (
     <section className="font-sen text-dark">
       <div className="bg-lavanderBG doublewrap-component">

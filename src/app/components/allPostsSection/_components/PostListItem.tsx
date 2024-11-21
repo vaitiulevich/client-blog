@@ -10,11 +10,12 @@ export const PostListItem = async ({ post }: PostListItemProps) => {
 
   const { name } = await fetchAuthorById(authorId);
   return (
-    <Link href={`/post/${id}`}>
-      <div className="p-4 hover:bg-yellowOpasity cursor-pointer">
-        <AuthorDate author={name} date={new Date(publishDate)} />
-        <h3 className="text-xl font-semibold mt-1">{title}</h3>
-      </div>
+    <Link
+      href={`/post/${id}`}
+      className="p-4 hover:bg-yellowOpasity  transition duration-300 ease-in-out cursor-pointer"
+    >
+      <AuthorDate author={name} date={new Date(publishDate)} />
+      <h3 className="text-xl font-semibold mt-1">{title}</h3>
     </Link>
   );
 };

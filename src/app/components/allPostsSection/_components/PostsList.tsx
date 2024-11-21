@@ -10,7 +10,7 @@ export const PostsList = ({ posts }: PostsListProps) => {
     <div className="w-[40%]">
       <div className="text-end flex items-center justify-between mb-8">
         <h2 className="text-2xl font-bold">{t('title')}</h2>
-        <Link className="text-purpure" href="/blog">
+        <Link className="text-purpure" href="/blog/page/1">
           {t('linkAll')}
         </Link>
       </div>

@@ -128,5 +128,35 @@
         ]
       }
     ]
+  },
+  "home": {
+    "categoryTitle": "Выберите категорию",
+    "filosofy": {
+      "AboutUs": {
+        "upperTitle": "о нас",
+        "title": "Мы сообщество контент-райтеров, которые делятся своими знаниями",
+        "moreButtonTitle": "Читать далее",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "OurMision": {
+        "upperTitle": "Наша миссия",
+        "title": "Создание ценного контента для творческих людей по всему миру",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    }
+  },
+  "aboutSection": {
+    "upperHeadline": "Почему мы начали",
+    "headline": "Это началось как простая идея и превратилось в нашу страсть",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "buttonTitle": "Узнать нашу историю"
+  },
+  "featuredSection": {
+    "upperHeadline": "Мы",
+    "headline": "Представлены в"
+  },
+  "pagination": {
+    "prev": "< Назад ",
+    "next": "Вперед >"
   }
 }

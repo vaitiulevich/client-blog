@@ -40,8 +40,8 @@ export const IntroSection = () => {
         <Image
           src={banner}
           alt="about banner"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
           priority
         />
         <div className="relative h-full z-3 w-[80%]">

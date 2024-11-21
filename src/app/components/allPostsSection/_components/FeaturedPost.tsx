@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { AuthorDatePanel } from '@app/components/AuthorDatePanel/AuthorDatePanel';
 import { useTranslations } from 'next-intl';
-// import { Button } from 'clients-blogs-ui-kit';
 import { ButtonNavigate } from '../../buttonNavigate/buttonNavigate';
 
 interface FeaturedPostProps {
@@ -20,7 +19,7 @@ export const FeaturedPost = ({ post }: FeaturedPostProps) => {
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={banner}
             alt={title}
-            layout="fill"
+            fill
             priority
           />
         </div>

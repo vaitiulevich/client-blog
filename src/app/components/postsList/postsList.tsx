@@ -4,7 +4,6 @@ interface PostsListProps {
   posts: Post[];
 }
 export const PostsList = ({ posts }: PostsListProps) => {
-  console.log(posts);
   if (!posts.length) {
     return <div className="doublewrap-component">Empty yet</div>;
   }

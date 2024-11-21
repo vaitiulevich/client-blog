@@ -31,14 +31,12 @@ export default async function Post({
           </div>
         </div>
       </div>
-      <div className="h-[25rem] w-[100%] wrapper-component flex items-center justify-center overflow-hidden my-10">
+      <div className="h-[25rem] w-[100%] flex items-center justify-center overflow-hidden my-10 relative">
         <Image
           src={banner}
           alt="banner"
-          layout="responsive"
-          width={50}
-          height={50}
-          className="object-cover w-full h-full"
+          fill
+          className="object-cover wrapper-component "
         />
       </div>
       <ContentPost content={content} />
