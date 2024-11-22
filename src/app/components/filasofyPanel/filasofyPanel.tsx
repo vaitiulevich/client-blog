@@ -20,7 +20,9 @@ export const FilasofyPanel = ({
         <p className="w-[45%] uppercase font-semibold">
           {t(`${key}.upperTitle`)}
         </p>
-        <h3 className="font-bold text-xl py-4">{t(`${key}.title`)}</h3>
+        <h3 className="font-bold text-xl py-4 max-md:py-2">
+          {t(`${key}.title`)}
+        </h3>
         <p className="text-grey text-sm">{t(`${key}.content`)}</p>
         {firstLink && ind === 0 && (
           <Link
@@ -35,7 +37,7 @@ export const FilasofyPanel = ({
   };
 
   return (
-    <div className="bg-lavanderBG p-16 grid grid-cols-2 gap-[10%] items-start min-h-72">
+    <div className="bg-lavanderBG p-16 grid grid-cols-2 gap-[10%] items-start min-h-72 max-md:grid-cols-1 max-md:p-6 max-md:gap-4">
       {renderFilasofy()}
     </div>
   );

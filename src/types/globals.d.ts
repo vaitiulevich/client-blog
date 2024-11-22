@@ -12,6 +12,7 @@ type Post = {
   banner: string;
   publishDate: Date;
   content: Article[];
+  categoryId: number;
 };
 
 type Author = {
@@ -25,3 +26,5 @@ type Author = {
   avatar: string;
   company: string;
 };
+
+type Locale = 'en' | 'ru';

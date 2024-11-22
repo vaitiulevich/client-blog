@@ -12,7 +12,7 @@ export const AuthorsList = async ({ limit }: AuthorsListProps) => {
   return (
     <div className="py-8  wrapper-component">
       <h2 className="text-3xl mb-8 text-center font-bold">List of Authors</h2>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 max-md:grid-cols-2">
         {data.map((item) => (
           <div
             className="flex flex-col items-center justify-start gap-1 bg-gray-100 px-4 py-8 hover:bg-yellowOpasity transition duration-300 ease-in-out"

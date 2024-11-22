@@ -59,7 +59,7 @@ export const SubscribeForm = () => {
         onClose={closePopup}
       />
       <form
-        className="flex gap-4 items-start"
+        className="flex gap-4 items-start max-md:flex-col "
         onSubmit={handleSubmit(handleAction)}
       >
         <ControlledInput

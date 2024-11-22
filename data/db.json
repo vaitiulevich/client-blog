@@ -5,7 +5,8 @@
       "title": "Step-by-step guide to choosing great font pairs",
       "authorId": 1,
       "category": "startup",
-      "tags": ["Business", "Screen"],
+      "categoryId": 2,
+      "tags": [1, 2],
       "banner": "https://images.pexels.com/photos/3772622/pexels-photo-3772622.jpeg",
       "publishDate": "2024-11-11",
       "content": [
@@ -29,7 +30,8 @@
       "title": "8 Figma design systems that you can download for free today.",
       "authorId": 2,
       "category": "technology",
-      "tags": ["Business", "Screen"],
+      "categoryId": 4,
+      "tags": [2, 3],
       "banner": "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "publishDate": "June 15, 2022",
       "content": [
@@ -53,7 +55,8 @@
       "title": "How to build rapport with your web design clients",
       "authorId": 1,
       "category": "startup",
-      "tags": ["Business", "Screen"],
+      "categoryId": 2,
+      "tags": [3, 4],
       "banner": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
       "publishDate": "July 10, 2022",
       "content": [
@@ -76,8 +79,9 @@
       "id": 4,
       "title": "8 Figma design systems that you can download for free today.",
       "authorId": 3,
-      "category": "startup",
-      "tags": ["Business", "Screen"],
+      "category": "Business",
+      "categoryId": 1,
+      "tags": [4, 5],
       "banner": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
       "publishDate": "August 5, 2022",
       "content": [
@@ -100,8 +104,9 @@
       "id": 5,
       "title": "Design tips for designers that cover everything you need",
       "authorId": 2,
-      "category": "finance",
-      "tags": ["Business", "Screen"],
+      "category": "economy",
+      "categoryId": 1,
+      "tags": [5, 1, 2],
       "banner": "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg",
       "publishDate": "September 20, 2022",
       "content": [

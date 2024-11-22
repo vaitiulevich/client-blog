@@ -1922,10 +1922,10 @@ client-only@0.0.1:
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
-clients-blogs-ui-kit@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/clients-blogs-ui-kit/-/clients-blogs-ui-kit-0.1.13.tgz#85588b214c8a2e9bc758373428fec5a9f3cef93b"
-  integrity sha512-9R33yC+K3l6Rjqp/5aYf4jiZYHnXZw4jkqgtT86Fg2Z9ZpElWs5enIgBqaTPsNLmnLAOsMvKoq+FTycshTU5uw==
+clients-blogs-ui-kit@^0.1.14:
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/clients-blogs-ui-kit/-/clients-blogs-ui-kit-0.1.14.tgz#2ce9baa4b2c6de5f9371af490b99888a4cdda095"
+  integrity sha512-jEfIIRBe6/ILuLxTqCkY3OmvY2lGeRLR/lxdmLMcbN2mHJImWHO/WHAO+UTgfRpD2xotPmbjzo6bTWdiesu7Gg==
   dependencies:
     react-hook-form "^7.53.2"
 

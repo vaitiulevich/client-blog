@@ -5,7 +5,11 @@ interface PostsListProps {
 }
 export const PostsList = ({ posts }: PostsListProps) => {
   if (!posts.length) {
-    return <div className="doublewrap-component">Empty yet</div>;
+    return (
+      <div className="doublewrap-component text-2xl font-semibold">
+        No results
+      </div>
+    );
   }
   return (
     <div>

@@ -2,8 +2,6 @@ import { navItems } from '@/constants/constants';
 import { Link } from '@/i18n/routing';
 import { useLocale } from 'next-intl';
 
-type Locale = 'en' | 'ru';
-
 export const NavigationMenu = () => {
   const locale = useLocale() as Locale;
 

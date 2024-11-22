@@ -10,9 +10,9 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
   const { name, avatar, description, instagramm, facebook, twitter, linkedin } =
     author;
   return (
-    <div>
-      <div className="py-16 flex justify-between items-center gap-8">
-        <div className="relative h-[15rem] w-[30%]">
+    <>
+      <div className="py-16 flex justify-between items-center gap-8 max-md:flex-col max-md:p-4">
+        <div className="relative h-[15rem] w-[30%] max-md:w-full">
           <Image
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={avatar}
@@ -22,7 +22,7 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
             priority
           />
         </div>
-        <div className="w-[65%]">
+        <div className="w-[65%] max-md:w-full">
           <h2 className="text-4xl font-bold">{t('title', { name })}</h2>
           <p className="text-sm text-grey my-5">{description}</p>
           <SocialLinks
@@ -35,6 +35,6 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
       </div>
 
       <HrPanel />
-    </div>
+    </>
   );
 };

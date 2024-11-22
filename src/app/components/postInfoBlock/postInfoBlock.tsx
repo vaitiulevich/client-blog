@@ -12,11 +12,11 @@ export const PostInfoBlock = ({ post, authorName }: postInfoBlockProps) => {
   const t = useTranslations('hero');
 
   return (
-    <div className="w-[60%]">
+    <div className="w-[60%] max-md:w-[80%]">
       <p className="uppercase ">
         {t('upperHeadline')} <span className="font-extrabold">{category}</span>
       </p>
-      <h2 className="text-5xl font-bold my-4">{title}</h2>
+      <h2 className="text-5xl font-bold my-4 max-md:text-3xl">{title}</h2>
       <AuthorDate
         mode="dark"
         author={authorName}

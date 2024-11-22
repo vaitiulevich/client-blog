@@ -11,8 +11,15 @@ export default async function Post({
   params: Promise<{ id: string; locales: string }>;
 }) {
   const { id, locales } = await params;
-  const { title, category, authorId, publishDate, banner, content } =
-    await fetchPostById(+id);
+  const {
+    title,
+    categoryId,
+    category,
+    authorId,
+    publishDate,
+    banner,
+    content,
+  } = await fetchPostById(+id);
   const { name, avatar } = await fetchAuthorById(authorId);
 
   return (
@@ -40,7 +47,7 @@ export default async function Post({
         />
       </div>
       <ContentPost content={content} />
-      <RecomendedPosts category={category} />
+      <RecomendedPosts category={categoryId} />
     </section>
   );
 }

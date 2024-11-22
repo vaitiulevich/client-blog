@@ -14,12 +14,18 @@ export const fetchPostsWithLimit = async (limit: number): Promise<Post[]> => {
   return response.json();
 };
 export const fetchPostsByCategory = async (
-  category: string,
+  categoryId: number,
   limit: number
 ): Promise<Post[]> => {
   const response = await apiRequest(
-    `${endpoints.posts}?category=${category}&_limit=${limit}`
+    `${endpoints.posts}?categoryId=${categoryId}&_limit=${limit}&tags_like=2&tags_like=4'`
   );
+  return response.json();
+};
+export const fetchPostsByQuery = async (
+  queryString: string
+): Promise<Post[]> => {
+  const response = await apiRequest(`${endpoints.posts}?${queryString}`);
   return response.json();
 };
 export const fetchAuthorsPosts = async (id: number): Promise<Post[]> => {

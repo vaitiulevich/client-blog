@@ -11,7 +11,7 @@ export const FeaturedPost = ({ post }: FeaturedPostProps) => {
   const { banner, title, authorId, publishDate, content, id } = post;
   const { subtitle } = content[0];
   return (
-    <div className="w-[50%]">
+    <div className="w-[50%] max-md:w-full">
       <h2 className="text-2xl font-bold mb-8">{t('title')}</h2>
       <div className="p-6 border-solid border-[0.5px]">
         <div className="relative h-[17rem]">

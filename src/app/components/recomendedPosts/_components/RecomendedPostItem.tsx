@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { AuthorDatePanel } from '../../AuthorDatePanel/AuthorDatePanel';
+import { Link } from '@/i18n/routing';
 
 interface RecomendedPostItemProps {
   post: Post;
 }
 export const RecomendedPostItem = ({ post }: RecomendedPostItemProps) => {
-  const { title, authorId, publishDate, content, banner } = post;
+  const { title, authorId, publishDate, content, banner, id } = post;
   const { subtitle } = content[0];
   return (
     <div>
@@ -19,7 +20,9 @@ export const RecomendedPostItem = ({ post }: RecomendedPostItemProps) => {
         />
       </div>
       <AuthorDatePanel authorId={authorId} date={new Date(publishDate)} />
-      <h3 className="font-bold text-xl my-4">{title}</h3>
+      <Link href={`/post/${id}`} className="font-bold text-xl my-4">
+        {title}
+      </Link>
       <p className="text-grey text-sm">{subtitle}</p>
     </div>
   );

@@ -158,5 +158,9 @@
   "pagination": {
     "prev": "< Prev ",
     "next": "Next >"
+  },
+  "category": {
+    "categoryTitle": "Categories",
+    "tagsTitle": "All Tags"
   }
 }

@@ -8,7 +8,7 @@ export const CategoryList = () => {
       const { id, title, describtion, icon } = category;
       return (
         <Link
-          href={''}
+          href={`/category/${id}`}
           key={id}
           className="p-6 border-gray-10 border-solid border-2 hover:bg-yellow transition duration-300 ease-in-out hover:border-yellow"
         >
@@ -21,5 +21,9 @@ export const CategoryList = () => {
       );
     });
   };
-  return <div className="grid grid-cols-4 gap-4">{renderCategory()}</div>;
+  return (
+    <div className="grid grid-cols-4 gap-4 max-md:grid-cols-2">
+      {renderCategory()}
+    </div>
+  );
 };
