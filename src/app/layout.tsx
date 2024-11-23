@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Header } from '@app/components/header/header';
 import { getMessages } from 'next-intl/server';
 import { Footer } from '@app/components/footer/footer';
-import '../globals.css';
+import './globals.css';
 
 export default async function RootLayout({
   children,
@@ -12,6 +12,10 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+        <title>Client blog</title>
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header />
