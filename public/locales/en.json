@@ -1,0 +1,166 @@
+{
+  "header": {
+    "logoTitle": "Modsen Client Blog",
+    "videoButtonTitle": "Video about us"
+  },
+  "recomended": {
+    "title": "What to read next"
+  },
+  "post": {
+    "postedTitle": "Posted on "
+  },
+  "contacts": {
+    "headline": "Let’s Start a Conversation",
+    "upperHeadline": "Contact us",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "worhingTitle": "Working hours",
+    "contactTitle": "Contact Us",
+    "workingDaysTitle": "Monday To Friday",
+    "workingHoursTitle": "9:00 AM to 8:00 PM ",
+    "workingSupportTitle": "Our Support Team is available 24/7",
+    "formContact": {
+      "sendButtonTitle": "Send Message",
+      "loadSendButtonTitle": "Loading..",
+      "namePlaceholder": "Full Name",
+      "emailPlaceholder": "Your Email",
+      "successMessage": "Subscription successful!",
+      "errorMessage": "Failed to send. Please try again.",
+      "relatedPlaceholder": "Query Related",
+      "messagePlaceholder": "Message"
+    }
+  },
+  "allPosts": {
+    "postList": {
+      "title": "All Posts",
+      "linkAll": "View All"
+    },
+    "featuredPost": {
+      "title": "Featured Post",
+      "moreButtonTitle": "Read More"
+    }
+  },
+  "author": {
+    "title": "Hey there, I’m {name} and welcome to my Blog"
+  },
+  "footer": {
+    "logoTitle": "Modsen Client Blog",
+    "formTitle": "Subscribe to our news letter to get latest updates and news",
+    "address": "Finstreet 118 2561 Fintown",
+    "contacts": "Hello@finsweet.com  020 7993 2905",
+    "formSubscribe": {
+      "errorValidation": "Incorrect Email",
+      "formInputPlaceholder": "Enter Your Email",
+      "errorSubmit": "Error with Subscrition",
+      "successfulSubmit": "Successful subscription",
+      "successMessage": "Subscription successful!",
+      "errorMessage": "Failed to send. Please try again.",
+      "submitButtonTitle": "Subscribe",
+      "loadSubmitButtonTitle": "Sending.."
+    }
+  },
+  "hero": {
+    "upperHeadline": "Posted on ",
+    "readMoreButtonTitle": "Read More"
+  },
+  "join": {
+    "title": "Join our team to be a part of our story",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "joinButtonTitle": "Join Now"
+  },
+  "about": {
+    "aboutIntro": {
+      "upperHeadline": "About us",
+      "headline": "We are a team of content writers who share their learnings",
+      "introDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "metrics": {
+        "blogsPublished": {
+          "title": "Blogs Published",
+          "indicator": "12+"
+        },
+        "viewsOnFinsweet": {
+          "title": "Views on Finsweet",
+          "indicator": "18K+"
+        },
+        "totalActiveUsers": {
+          "title": "Total active Users",
+          "indicator": "30K+"
+        }
+      },
+      "filosofy": {
+        "OurMision": {
+          "upperTitle": "Our mision",
+          "title": "Creating valuable content for creatives all around the world",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        },
+        "OurVision": {
+          "upperTitle": "Our Vision",
+          "title": "A platform that empowers individuals to improve",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        }
+      }
+    },
+    "aboutSection": {
+      "aboutTeamTitle": "Our team of creatives",
+      "aboutTeamSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "aboutTeamDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "aboutReasonTitle": "Why we started this Blog",
+      "aboutReasonSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "aboutReasonDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+  "policy": {
+    "headline": "Privacy Policy",
+    "subStatus": "Last Updated  on 27th January 2022",
+    "articleTitle": "Lorem ipsum dolor sit amet",
+    "articleP": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+    "articles": [
+      {
+        "articleTitle": "Lorem ipsum dolor sit amet",
+        "articleP": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+        ]
+      },
+      {
+        "articleTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        "articleP": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam."
+        ]
+      }
+    ]
+  },
+  "home": {
+    "categoryTitle": "Choose A Catagory",
+    "filosofy": {
+      "AboutUs": {
+        "upperTitle": "ABOUT US",
+        "title": "We are a community of content writers who share their learnings",
+        "moreButtonTitle": "Read More",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      },
+      "OurMision": {
+        "upperTitle": "Our mision",
+        "title": "Creating valuable content for creatives all around the world",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+      }
+    }
+  },
+  "aboutSection": {
+    "upperHeadline": "Why we started ",
+    "headline": "It started out as a simple idea and evolved into our passion",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "buttonTitle": "Discover our story"
+  },
+  "featuredSection": {
+    "upperHeadline": "We are",
+    "headline": "Featured in"
+  },
+  "pagination": {
+    "prev": "< Prev ",
+    "next": "Next >"
+  },
+  "category": {
+    "categoryTitle": "Categories",
+    "tagsTitle": "All Tags"
+  }
+}

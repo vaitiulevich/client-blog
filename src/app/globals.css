@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner-shadow {
+  box-shadow: inset 10rem 2rem 18rem #000;
+}
+.wrapper-component {
+  padding: 0 10%;
+}
+@media (max-width: 768px) {
+  .wrapper-component {
+    padding: 0 2%;
+  }
+}
+
+.doublewrap-component {
+  padding: 0 20%;
+}
+@media (max-width: 768px) {
+  .doublewrap-component {
+    padding: 0 5%;
+  }
+}
+
+.figure-radius {
+  border-radius: 37px 0 0 0;
+}
+.figure-circle-radius {
+  border-radius: 50rem;
+}
