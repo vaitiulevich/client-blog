@@ -4,6 +4,11 @@ import { getMessages } from 'next-intl/server';
 import { Footer } from '@app/components/footer/footer';
 import './globals.css';
 
+export const metadata = {
+  title: 'Client blog<',
+  description: 'Client blog<',
+};
+
 export default async function RootLayout({
   children,
 }: Readonly<{
