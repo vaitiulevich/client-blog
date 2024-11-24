@@ -17,6 +17,7 @@ type Post = {
 
 type Author = {
   id: number;
+  from: string;
   facebook: string;
   instagramm: string;
   linkedin: string;
@@ -28,3 +29,9 @@ type Author = {
 };
 
 type Locale = 'en' | 'ru';
+
+type Review = {
+  id: number;
+  authorId: number;
+  content: string;
+};

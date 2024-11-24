@@ -2,9 +2,12 @@ import { HrPanel } from '@/app/components/hrPanel/hrPanel';
 import { SocialLinks } from '@/app/components/socialLinks/socialLinks';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import TypingAnimation from './TypingAnimation';
+
 interface AuthorHeaderProps {
   author: Author;
 }
+
 export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
   const t = useTranslations('author');
   const { name, avatar, description, instagramm, facebook, twitter, linkedin } =
@@ -22,8 +25,15 @@ export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
             priority
           />
         </div>
-        <div className="w-[65%] max-md:w-full">
-          <h2 className="text-4xl font-bold">{t('title', { name })}</h2>
+        <div className="w-[65%] h-min-full max-md:w-full">
+          <div className="min-h-20">
+            <h2 className="text-4xl font-bold">
+              <TypingAnimation
+                text={t('title', { name }).toString()}
+                speed={100}
+              />
+            </h2>
+          </div>
           <p className="text-sm text-grey my-5">{description}</p>
           <SocialLinks
             instagram={instagramm}

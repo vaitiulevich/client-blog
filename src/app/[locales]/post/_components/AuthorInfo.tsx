@@ -1,17 +1,22 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface AuthorInfoProps {
   authorName: string;
-  date: Date;
+  date?: Date;
+  from?: string;
+  authorId: number;
   avatar: string;
   locale?: string;
 }
 
 export const AuthorInfo = ({
   authorName,
+  authorId,
   avatar,
   date,
+  from,
   locale = 'en',
 }: AuthorInfoProps) => {
   const options: Intl.DateTimeFormatOptions = {
@@ -19,7 +24,7 @@ export const AuthorInfo = ({
     month: 'short',
     day: 'numeric',
   };
-  const formattedDate = date.toLocaleDateString(locale, options);
+  const formattedDate = date ? date.toLocaleDateString(locale, options) : '';
   const t = useTranslations('post');
   return (
     <div className="flex gap-4">
@@ -35,10 +40,17 @@ export const AuthorInfo = ({
         </div>
       </div>
       <div>
-        <h3 className="text-purpure text-xl font-bold">{authorName}</h3>
+        <Link href={`/author/${authorId}`}>
+          <h3 className="text-purpure text-xl font-bold">{authorName}</h3>
+        </Link>
         <p className="text-grey text-sm">
-          {t('postedTitle')}
-          {formattedDate}
+          {date && (
+            <>
+              {t('postedTitle')}
+              {formattedDate}
+            </>
+          )}
+          {from && from}
         </p>
       </div>
     </div>

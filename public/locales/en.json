@@ -162,5 +162,10 @@
   "category": {
     "categoryTitle": "Categories",
     "tagsTitle": "All Tags"
+  },
+  "review": {
+    "upperHeadline": "TESTIMONIALs",
+    "headline": "What people say about our blog",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
   }
 }

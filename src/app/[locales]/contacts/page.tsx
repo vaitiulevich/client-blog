@@ -1,14 +1,14 @@
 import { ContactForm } from '@/app/components/contactForm/contactForm';
 import { useTranslations } from 'next-intl';
-
-const contactPhone = '020 7993 2905';
-const contactEmail = 'hello@finsweet.com';
+import MapSection from './_components/MapSection';
+import { contactEmail, contactPhone } from '@/constants/contacts';
+import { CENTER_MAP } from '@/constants/map';
 
 export default function Contacts() {
   const t = useTranslations('contacts');
   return (
-    <section className="font-sen text-dark py-20">
-      <div className="m-auto w-[50%]">
+    <section className="font-sen text-dark">
+      <div className="m-auto w-[50%] py-16">
         <p className="uppercase text-center font-bold">{t('upperHeadline')}</p>
         <h2 className="text-4xl text-center font-bold my-4">{t('headline')}</h2>
         <p className="text-sm text-center text-grey">{t('description')}</p>
@@ -27,6 +27,7 @@ export default function Contacts() {
         </div>
         <ContactForm />
       </div>
+      <MapSection center={CENTER_MAP} />
     </section>
   );
 }

@@ -3,15 +3,10 @@ import Image from 'next/image';
 import banner from '@/../public/assets/introImg.png';
 import { HrPanel } from '@app/components/hrPanel/hrPanel';
 import { FilasofyPanel } from '@/app/components/filasofyPanel/filasofyPanel';
+import { filasofyKeys, metricsKeys } from '@/constants/filasofy';
 
 export const IntroSection = () => {
   const t = useTranslations('about.aboutIntro');
-  const metricsKeys = [
-    'blogsPublished',
-    'viewsOnFinsweet',
-    'totalActiveUsers',
-  ] as const;
-  const filasofyKeys = ['OurMision', 'OurVision'];
 
   const renderMetrics = () => {
     return metricsKeys.map((key) => (

@@ -27,6 +27,7 @@ export default async function Post({
       <div>
         <div className="doublewrap-component">
           <AuthorInfo
+            authorId={authorId}
             authorName={name}
             avatar={avatar}
             date={new Date(publishDate)}

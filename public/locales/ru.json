@@ -22,7 +22,7 @@
   "contacts": {
     "headline": "Давайте начнем общение",
     "upperHeadline": "Свяжитесь с нами",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "description": "Наш блог посвящен актуальным темам, которые волнуют наше сообщество. Мы делимся полезными советами, вдохновляющими историями",
     "worhingTitle": "Часы работы",
     "contactTitle": "Свяжитесь с нами",
     "workingDaysTitle": "С понедельника по пятницу",
@@ -136,19 +136,19 @@
         "upperTitle": "о нас",
         "title": "Мы сообщество контент-райтеров, которые делятся своими знаниями",
         "moreButtonTitle": "Читать далее",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        "content": "Наш блог посвящен актуальным темам, которые волнуют наше сообщество. Мы делимся полезными советами, вдохновляющими историями и экспертными мнениями, чтобы помочь вам находить решения и получать новые знания. Присоединяйтесь к нам и откройте для себя мир интересного контента!"
       },
       "OurMision": {
         "upperTitle": "Наша миссия",
         "title": "Создание ценного контента для творческих людей по всему миру",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        "content": " Наш блог посвящен актуальным темам, которые волнуют наше сообщество. Мы делимся полезными советами, вдохновляющими историями и экспертными мнениями, чтобы помочь вам находить решения и получать новые знания. Присоединяйтесь к нам и откройте для себя мир интересного контента!"
       }
     }
   },
   "aboutSection": {
     "upperHeadline": "Почему мы начали",
     "headline": "Это началось как простая идея и превратилось в нашу страсть",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "description": "Наш блог посвящен актуальным темам, которые волнуют наше сообщество. Мы делимся полезными советами, вдохновляющими историями и экспертными мнениями, чтобы помочь вам находить решения и получать новые знания. Присоединяйтесь к нам и откройте для себя мир интересного контента!",
     "buttonTitle": "Узнать нашу историю"
   },
   "featuredSection": {
@@ -158,5 +158,14 @@
   "pagination": {
     "prev": "< Назад ",
     "next": "Вперед >"
+  },
+  "category": {
+    "categoryTitle": "Категории",
+    "tagsTitle": "Все теги"
+  },
+  "review": {
+    "upperHeadline": "ОТЗЫВЫ",
+    "headline": "Что говорят люди о нашем блоге",
+    "description": "Наш блог предлагает разнообразные статьи на темы здоровья, кулинарии и образа жизни."
   }
 }

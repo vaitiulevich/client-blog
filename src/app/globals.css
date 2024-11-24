@@ -31,3 +31,17 @@
 .figure-circle-radius {
   border-radius: 50rem;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  width: calc(200%);
+}

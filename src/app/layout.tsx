@@ -3,10 +3,12 @@ import { Header } from '@app/components/header/header';
 import { getMessages } from 'next-intl/server';
 import { Footer } from '@app/components/footer/footer';
 import './globals.css';
+import ErrorBoundary from '@app/components/ErrorBoundary/ErrorBoundary';
 
 export const metadata = {
-  title: 'Client blog<',
-  description: 'Client blog<',
+  title: 'Client blog',
+  description: 'Client blog',
+  icon: '/public/favicon.png',
 };
 
 export default async function RootLayout({
@@ -23,9 +25,11 @@ export default async function RootLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <ErrorBoundary>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ErrorBoundary>
         </NextIntlClientProvider>
       </body>
     </html>

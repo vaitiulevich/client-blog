@@ -4,4 +4,5 @@ export const endpoints = {
   posts: '/posts',
   postsWithLimit: '/posts?_limit=',
   postsByAuthor: '/posts?authorId=',
+  reviews: '/reviews',
 };

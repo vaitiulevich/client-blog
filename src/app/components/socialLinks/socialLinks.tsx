@@ -15,20 +15,46 @@ export const SocialLinks = ({
   facebook,
   bgColor = 'dark',
 }: SocialLinksProps) => {
-  return (
-    <div className="flex gap-4">
-      <Link href={instagram ?? '#'}>
-        <SocialIcon bgColor={bgColor} name={'instagram'} />
-      </Link>
-      <Link href={twitter ?? '#'}>
-        <SocialIcon bgColor={bgColor} name={'twitter'} />
-      </Link>
-      <Link href={linkedin ?? '#'}>
-        <SocialIcon bgColor={bgColor} name={'linkedin'} />
-      </Link>
-      <Link href={facebook ?? '#'}>
-        <SocialIcon bgColor={bgColor} name={'facebook'} />
-      </Link>
-    </div>
-  );
+  const medias: {
+    href: string | undefined;
+    name: 'instagram' | 'twitter' | 'linkedin' | 'facebook';
+  }[] = [
+    {
+      name: 'instagram',
+      href: instagram,
+    },
+    {
+      name: 'twitter',
+      href: twitter,
+    },
+    {
+      name: 'linkedin',
+      href: linkedin,
+    },
+    {
+      name: 'facebook',
+      href: facebook,
+    },
+  ];
+
+  const renderSocialLinks = () => {
+    return medias.map((item) => {
+      const { href, name } = item;
+      return (
+        <Link
+          key={item.name}
+          href={href ?? '#'}
+          className="transition-transform duration-300 ease-in-out transform hover:-translate-y-0.5"
+        >
+          <SocialIcon
+            bgColor={bgColor}
+            name={name}
+            className="transition-transform duration-300 ease-in-out transform hover:-translate-y-0.5"
+          />
+        </Link>
+      );
+    });
+  };
+
+  return <div className="flex gap-4">{renderSocialLinks()}</div>;
 };
