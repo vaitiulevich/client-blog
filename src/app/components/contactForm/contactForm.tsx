@@ -11,21 +11,16 @@ import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { z } from 'zod';
-import { relatedList } from '@/constants/constants';
 import { Popup } from '@app/components/popup/popup';
 import { sendSubscribeContacts } from '@/utils/sendSubscribeContacts';
-
-const contactsSchema = z.object({
-  fullName: z.string().min(2, { message: 'Must be 2 or more characters long' }),
-  email: z.string().email('Invalid email address'),
-  related: z.string().nonempty({ message: 'Selection is required' }),
-  message: z.string().min(1, { message: 'Message is required' }),
-});
+import { contactsSchema } from '@/schemas';
+import { useRelatedList } from '@/utils/hooks/useRelatedList';
 
 type ContactFormData = z.infer<typeof contactsSchema>;
 
 export const ContactForm = () => {
   const t = useTranslations('contacts.formContact');
+  const relatedList = useRelatedList();
   const [popup, setPopup] = useState<{
     message: string | null;
     type: 'success' | 'error';

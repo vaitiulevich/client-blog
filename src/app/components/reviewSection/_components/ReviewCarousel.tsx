@@ -34,12 +34,12 @@ export const ReviewCarousel = ({ reviews }: ReviewCarouselProps) => {
   };
 
   return (
-    <div className="w-[60%]">
-      <p className="font-semibold text-2xl mb-16">
+    <div className="w-[60%] max-md:w-full">
+      <p className="font-semibold text-2xl mb-16 max-md:mb-8">
         {reviews[currentIndex].content}
       </p>
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between max-md:flex-col-reverse max-md:gap-4">
         {author && (
           <AuthorInfo
             authorName={author.name}
@@ -49,7 +49,7 @@ export const ReviewCarousel = ({ reviews }: ReviewCarouselProps) => {
           />
         )}
 
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-4 max-md:justify-end max-md:w-full">
           <button
             onClick={prevReview}
             className="flex items-center justify-center w-10 h-10 bg-light outline-none rounded-full hover:scale-110 transition-transform"

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import { Modal } from '../modal/Modal';
 import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
@@ -25,7 +25,16 @@ export const VideoModalButton = () => {
       />
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        <h2 className="text-xl font-bold mb-4">{t('videoButtonTitle')}</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold">{t('videoButtonTitle')}</h2>
+          <button
+            onClick={handleCloseModal}
+            className=" text-gray-500 hover:text-gray-700 text-3xl"
+          >
+            ×
+          </button>
+        </div>
+
         <iframe
           width="100%"
           height="315"

@@ -48,7 +48,7 @@ export default async function Post({
         />
       </div>
       <ContentPost content={content} />
-      <RecomendedPosts category={categoryId} />
+      <RecomendedPosts excludedPostId={+id} />
     </section>
   );
 }

@@ -20,15 +20,18 @@ export const FeaturedListSection = () => {
   ));
 
   return (
-    <section className="sponsors-section wrapper-component flex items-center justify-between my-16 max-md:flex-col">
-      <div className="w-[10%] text-grey max-md:w-full">
+    <section className="sponsors-section wrapper-component flex items-center gap-4 justify-between my-16 max-md:flex-col">
+      <div className="w-fit  text-grey max-md:w-full ">
         <p>{t('upperHeadline')}</p>
         <h2 className="text-xl text-nowrap font-bold mb-4">{t('headline')}</h2>
       </div>
       <div className="overflow-hidden w-[85%] max-md:w-full">
-        <div className="flex animate-marquee whitespace-nowrap justify-between gap-2">
+        <div className="flex animate-marquee whitespace-nowrap justify-between gap-3">
           {renderLogos}
-          {renderLogos}
+          <div className="flex justify-between gap-3 max-md:hidden">
+            {renderLogos}
+          </div>
+          ,
         </div>
       </div>
     </section>

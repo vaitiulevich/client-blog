@@ -8,10 +8,7 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Popup } from '@app/components/popup/popup';
 import { sendSubscribeEmail } from '@/utils/sendSubscribeEmail';
-
-const emailSchema = z.object({
-  email: z.string().email('Invalid email'),
-});
+import { emailSchema } from '@/schemas';
 
 type EmailFormData = z.infer<typeof emailSchema>;
 
@@ -44,7 +41,6 @@ export const SubscribeForm = () => {
     } catch (error) {
       console.error(error);
       setPopup({ message: t('errorMessage'), type: 'error' });
-    } finally {
     }
   };
 
@@ -59,12 +55,12 @@ export const SubscribeForm = () => {
         onClose={closePopup}
       />
       <form
-        className="flex gap-4 items-start max-md:flex-col "
+        className="flex gap-4 items-start max-md:flex-col"
         onSubmit={handleSubmit(handleAction)}
       >
         <ControlledInput
           register={register('email')}
-          type="email"
+          type="text"
           placeholder={t('formInputPlaceholder')}
           disabled={isSubmitting}
           error={errors.email?.message}

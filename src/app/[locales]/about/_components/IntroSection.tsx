@@ -42,7 +42,7 @@ export const IntroSection = () => {
           priority
         />
         <div className="relative h-full z-3 w-[80%] max-md:w-full">
-          <div className="w-[65%] p-8 bg-yellow flex min-h-28 justify-between gap-4 max-md:w-full">
+          <div className="w-[76%] p-8 bg-yellow flex min-h-28 justify-between gap-4 max-lg:w-fit max-md:w-full">
             {renderMetrics()}
           </div>
           <HrPanel />

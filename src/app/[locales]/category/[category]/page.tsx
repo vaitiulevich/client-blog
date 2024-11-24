@@ -57,7 +57,7 @@ export default function CategoryPage() {
   };
 
   return (
-    <section className="text-dark">
+    <section className="text-dark mb-10">
       <CategoryHeader categoryId={+category} />
       <div className="wrapper-component flex justify-between max-md:flex-col-reverse">
         <div className="w-[67%] max-md:w-full">

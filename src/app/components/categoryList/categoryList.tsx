@@ -1,16 +1,17 @@
-import { categoryes } from '@/constants/categoryes';
 import { Link } from '@/i18n/routing';
+import { useCategories } from '@/utils/hooks/useCategories';
 import Image from 'next/image';
 
 export const CategoryList = () => {
+  const categories = useCategories();
   const renderCategory = () => {
-    return categoryes.map((category) => {
-      const { id, title, describtion, icon } = category;
+    return categories.map((category) => {
+      const { id, title, description, icon } = category;
       return (
         <Link
           href={`/category/${id}`}
           key={id}
-          className="p-6 border-2 border-gray-10 relative transform transition-transform duration-300 ease-in-out hover:scale-105 hover:border-yellow hover:bg-yellow group" // group добавлена для управления вложенными элементами при наведении
+          className="p-6 border-2 border-gray-10 relative transform transition-transform duration-300 ease-in-out hover:scale-105 hover:border-yellow hover:bg-yellow group max-md:p-2"
         >
           <div className="bg-yellowOpasity flex items-center justify-center w-12 h-12 rounded-md transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-8px]">
             <Image
@@ -20,7 +21,7 @@ export const CategoryList = () => {
             />
           </div>
           <h3 className="text-xl font-semibold my-3">{title}</h3>
-          <p className="text-grey text-sm">{describtion}</p>
+          <p className="text-grey text-sm">{description}</p>
         </Link>
       );
     });

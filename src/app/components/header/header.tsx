@@ -1,8 +1,9 @@
 import { useTranslations } from 'next-intl';
-import { NavigationMenu } from '../navigationMenu/navigationMenu';
-import { LocaleSwitch } from '../localeSwitcher/LocaleSwitcher';
-import { VideoModalButton } from '../videoModalButton/videoModalButton';
+import { NavigationMenu } from '@app/components/navigationMenu/navigationMenu';
+import { LocaleSwitch } from '@app/components/localeSwitcher/LocaleSwitcher';
+import { VideoModalButton } from '@app/components/videoModalButton/videoModalButton';
 import BurgerMenu from './_components/BurgerMenu';
+import { Link } from '@/i18n/routing';
 
 export const Header = () => {
   const t = useTranslations('header');
@@ -11,14 +12,18 @@ export const Header = () => {
     <header className="bg-darkBG text-light wrapper-component font-inter shadow">
       <div className="flex justify-between items-center h-16">
         <div className="flex-shrink-0">
-          <h1 className="text-xl font-bold">{t('logoTitle')}</h1>
+          <Link href="/">
+            <h1 className="text-xl font-bold max-sm:text-base">
+              {t('logoTitle')}
+            </h1>
+          </Link>
         </div>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <LocaleSwitch />
           <NavigationMenu />
           <VideoModalButton />
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden max-lg:w-24">
           <BurgerMenu />
         </div>
       </div>

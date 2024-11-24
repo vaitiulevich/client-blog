@@ -10,9 +10,10 @@
 .wrapper-component {
   padding: 0 10%;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
   .wrapper-component {
-    padding: 0 2%;
+    padding: 0 5%;
   }
 }
 

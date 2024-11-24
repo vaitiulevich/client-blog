@@ -17,14 +17,8 @@ export const navItems = [
     href: '/policy',
   },
 ];
-
-export const relatedList = [
-  { value: 'organization', label: 'Organization' },
-  { value: 'company', label: 'Company' },
-  { value: 'other', label: 'Other' },
-];
-
 export const linkToVideo =
   'https://www.youtube.com/embed/zRp4NS_eeGc?si=eBewL0UfTbOZZG4S&autoplay=1';
 
 export const postsPerPage = 4;
+export const limitOfRecomenderPosts = 3;

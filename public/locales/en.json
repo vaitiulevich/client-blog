@@ -68,6 +68,7 @@
     "joinButtonTitle": "Join Now"
   },
   "about": {
+    "allAuthorsTitle": "List of Authors",
     "aboutIntro": {
       "upperHeadline": "About us",
       "headline": "We are a team of content writers who share their learnings",
@@ -167,5 +168,44 @@
     "upperHeadline": "TESTIMONIALs",
     "headline": "What people say about our blog",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  "categories": {
+    "business": {
+      "title": "Business",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    "startup": {
+      "title": "Startup",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    "economy": {
+      "title": "Economy",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    "technology": {
+      "title": "Technology",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    }
+  },
+  "blog": {
+    "headline": "Featured post",
+    "moreButtonTitle": "Read More",
+    "allPostsTitle": "All Posts",
+    "allCategoryTitle": "All Categories"
+  },
+  "related": {
+    "organization": {
+      "label": "Organization"
+    },
+    "company": {
+      "label": "Company"
+    },
+    "other": {
+      "label": "Other"
+    }
+  },
+  "notFound": {
+    "title": "Could Not Found",
+    "returnButtonTitle": "Return Home"
   }
 }

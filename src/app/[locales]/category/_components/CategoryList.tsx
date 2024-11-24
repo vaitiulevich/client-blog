@@ -1,5 +1,5 @@
-import { categoryes } from '@/constants/categoryes';
 import { Link } from '@/i18n/routing';
+import { useCategories } from '@/utils/hooks/useCategories';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 interface CategoryListProps {
@@ -7,8 +7,10 @@ interface CategoryListProps {
 }
 export const CategoryList = ({ selectCategory }: CategoryListProps) => {
   const t = useTranslations('category');
+  const categories = useCategories();
+
   const renderCategory = () => {
-    return categoryes.map((category) => {
+    return categories.map((category) => {
       const { id, title, icon } = category;
       const isSelected = id === selectCategory;
       return (

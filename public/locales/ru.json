@@ -4,7 +4,7 @@
     "videoButtonTitle": "Видео о нас"
   },
   "recomended": {
-    "title": "проситать следующим"
+    "title": "Читайте следующим"
   },
   "post": {
     "postedTitle": "Опублековано "
@@ -68,6 +68,7 @@
     "joinButtonTitle": "Присоединиться сейчас"
   },
   "about": {
+    "allAuthorsTitle": "Список Авторов",
     "aboutIntro": {
       "upperHeadline": "О нас",
       "headline": "Мы команда контент-райтеров, делящихся своими знаниями",
@@ -167,5 +168,44 @@
     "upperHeadline": "ОТЗЫВЫ",
     "headline": "Что говорят люди о нашем блоге",
     "description": "Наш блог предлагает разнообразные статьи на темы здоровья, кулинарии и образа жизни."
+  },
+  "categories": {
+    "business": {
+      "title": "Бизнес",
+      "description": "Лорем ипсум долор сит амет, консектетур адиписцинг элит."
+    },
+    "startup": {
+      "title": "Стартап",
+      "description": "Лорем ипсум долор сит амет, консектетур адиписцинг элит."
+    },
+    "economy": {
+      "title": "Экономика",
+      "description": "Лорем ипсум долор сит амет, консектетур адиписцинг элит."
+    },
+    "technology": {
+      "title": "Технология",
+      "description": "Лорем ипсум долор сит амет, консектетур адиписцинг элит."
+    }
+  },
+  "blog": {
+    "headline": "Рекомендуемый пост",
+    "moreButtonTitle": "Читать далее",
+    "allPostsTitle": "Посты",
+    "allCategoryTitle": "Категории"
+  },
+  "related": {
+    "organization": {
+      "label": "Организация"
+    },
+    "company": {
+      "label": "Компания"
+    },
+    "other": {
+      "label": "Другое"
+    }
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "returnButtonTitle": "Вернуться на главную"
   }
 }
