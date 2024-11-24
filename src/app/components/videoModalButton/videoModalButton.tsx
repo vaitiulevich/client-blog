@@ -1,6 +1,6 @@
 'use client';
 
-import { use, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Modal } from '../modal/Modal';
 import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
