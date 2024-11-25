@@ -14,6 +14,7 @@ export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   return createPortal(
     <div
+      role="dialog"
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300"
       onClick={onClose}
     >

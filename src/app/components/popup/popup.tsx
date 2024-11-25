@@ -20,7 +20,7 @@ export const Popup = ({ isOpen, message, type, onClose }: PopupProps) => {
 
   if (!isOpen || !message) return null;
 
-  const popupClasses = `fixed top-4 right-4 p-4 rounded shadow-lg ${
+  const popupClasses = `popup fixed top-4 right-4 p-4 rounded shadow-lg ${
     type === 'success' ? 'bg-green-400 text-white' : 'bg-red-400 text-white'
   }`;
 

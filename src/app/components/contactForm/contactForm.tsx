@@ -54,7 +54,10 @@ export const ContactForm = () => {
 
   return (
     <>
-      <form className="flex flex-col" onSubmit={handleSubmit(handleAction)}>
+      <form
+        className="contact-form flex flex-col"
+        onSubmit={handleSubmit(handleAction)}
+      >
         <ControlledInput
           register={register('fullName')}
           type="text"

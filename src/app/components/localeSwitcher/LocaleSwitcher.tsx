@@ -1,9 +1,10 @@
 'use client';
 
 import { locales } from '@/constants/constants';
+// import { usePathname, useRouter } from '@/i18n/routing';
 import { LocaleSwitcher } from 'clients-blogs-ui-kit';
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export const LocaleSwitch = () => {
   const currentLocale = useLocale();
@@ -11,7 +12,7 @@ export const LocaleSwitch = () => {
   const pathname = usePathname();
 
   const handleLocaleChange = (newLocale: string) => {
-    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, '');
+    const pathWithoutLocale = pathname.replace(/^\/(en|ru)/, '');
     router.push(`/${newLocale}${pathWithoutLocale}`);
   };
 
