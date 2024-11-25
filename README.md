@@ -12,4 +12,4 @@ repository: https://github.com/vaitiulevich/client-blog-api
 api: https://client-blog-api.vercel.app/
 
 ## UI kit
-repository: [https://github.com/vaitiulevich/clients-blog-ui-kit]
+repository: (https://github.com/vaitiulevich/clients-blogs-ui-kit)
