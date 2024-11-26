@@ -1,5 +1,6 @@
-import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+
+import { Link } from '@/i18n/routing';
 
 export const PostListItem = ({ post }: { post: Post }) => {
   const { title, banner, category, content } = post;

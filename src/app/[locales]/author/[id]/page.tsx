@@ -1,7 +1,8 @@
-import { fetchAuthorById } from '@/api/authors';
-import { fetchAuthorsPosts } from '@/api/posts';
 import { PostsList } from '@components/postsList/postsList';
 import { AuthorInfo } from '@app/[locales]/author/_components/AuthorInfo';
+
+import { fetchAuthorById } from '@/api/authors';
+import { fetchAuthorsPosts } from '@/api/posts';
 
 export default async function AuthorPage({
   params,

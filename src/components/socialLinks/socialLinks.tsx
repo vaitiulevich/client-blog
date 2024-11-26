@@ -1,5 +1,6 @@
-import { Link } from '@/i18n/routing';
 import { SocialIcon } from 'clients-blogs-ui-kit';
+
+import { Link } from '@/i18n/routing';
 
 interface SocialLinksProps {
   instagram?: string;

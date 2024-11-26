@@ -1,8 +1,10 @@
-import { fetchPostById } from '@/api/posts';
 import { AuthorDatePanel } from '@components/AuthorDatePanel/AuthorDatePanel';
 import Image from 'next/image';
+
 import { BlogHeadline } from './BlogHeadline';
 import { BlogButton } from './BlogButton';
+
+import { fetchPostById } from '@/api/posts';
 
 export const BlogHeader = async () => {
   const post = await fetchPostById(2);

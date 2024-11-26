@@ -1,8 +1,10 @@
 import { HrPanel } from '@components/hrPanel/hrPanel';
-import { SocialLinks } from '@/components/socialLinks/socialLinks';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
 import TypingAnimation from './TypingAnimation';
+
+import { SocialLinks } from '@/components/socialLinks/socialLinks';
 
 interface AuthorHeaderProps {
   author: Author;

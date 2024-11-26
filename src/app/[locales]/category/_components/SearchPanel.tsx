@@ -2,6 +2,7 @@
 import { ChangeEvent, useState } from 'react';
 import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
+
 import { useTags } from '@/utils/hooks/useTags';
 
 export const SearchPanel = ({

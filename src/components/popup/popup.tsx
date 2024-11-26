@@ -1,5 +1,6 @@
-import { PopupType } from '@/types/enums';
 import { useEffect } from 'react';
+
+import { PopupType } from '@/types/enums';
 
 interface PopupProps {
   isOpen: boolean;

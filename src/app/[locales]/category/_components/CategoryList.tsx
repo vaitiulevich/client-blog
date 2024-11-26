@@ -1,7 +1,8 @@
-import { Link } from '@/i18n/routing';
-import { useCategories } from '@/utils/hooks/useCategories';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
+import { Link } from '@/i18n/routing';
+import { useCategories } from '@/utils/hooks/useCategories';
 interface CategoryListProps {
   selectCategory: number;
 }

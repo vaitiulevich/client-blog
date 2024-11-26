@@ -1,5 +1,6 @@
-import { useTags } from '@/utils/hooks/useTags';
 import { useTranslations } from 'next-intl';
+
+import { useTags } from '@/utils/hooks/useTags';
 
 interface TagsListProps {
   selectedTags: number[];

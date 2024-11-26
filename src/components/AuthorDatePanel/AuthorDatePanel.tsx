@@ -1,6 +1,7 @@
+import { AuthorDate } from 'clients-blogs-ui-kit';
+
 import { fetchAuthorById } from '@/api/authors';
 import { Link } from '@/i18n/routing';
-import { AuthorDate } from 'clients-blogs-ui-kit';
 
 interface AuthorDatePanelProps {
   authorId: number;

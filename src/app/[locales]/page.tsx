@@ -1,11 +1,13 @@
-import { countAuthorsHome } from '@/constants/constants';
 import { HrPanel } from '@components/hrPanel/hrPanel';
-import { homeFilasofyKeys } from '@/constants/filasofy';
 import { useTranslations } from 'next-intl';
 import { LazySection } from '@components/LazySection/LazySection';
+import dynamic from 'next/dynamic';
+
+import { countAuthorsHome } from '@/constants/constants';
+import { homeFilasofyKeys } from '@/constants/filasofy';
 import { Hero } from '@/components/hero/hero';
 import { AllPostsSection } from '@/components/allPostsSection/allPostsSection';
-import dynamic from 'next/dynamic';
+
 
 const LazyFilasofyPanel = dynamic(() =>
   import('@components/filasofyPanel/filasofyPanel').then(

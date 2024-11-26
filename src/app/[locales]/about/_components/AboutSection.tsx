@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
 import teamImg from '@/../public/assets/teamImg.png';
 import reasonImg from '@/../public/assets/reasonImg.png';
 

@@ -1,6 +1,7 @@
+import Image from 'next/image';
+
 import { Link } from '@/i18n/routing';
 import { useCategories } from '@/utils/hooks/useCategories';
-import Image from 'next/image';
 
 export const CategoryList = () => {
   const categories = useCategories();

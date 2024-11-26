@@ -1,6 +1,7 @@
-import { featured } from '@/constants/featured';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
+import { featured } from '@/constants/featured';
 
 export const FeaturedListSection = () => {
   const t = useTranslations('featuredSection');

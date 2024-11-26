@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Popup } from '@components/popup/popup';
+
 import { sendSubscribeEmail } from '@/utils/sendSubscribeEmail';
 import { emailSchema } from '@/schemas';
 import { PopupType } from '@/types/enums';

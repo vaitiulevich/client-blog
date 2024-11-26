@@ -1,6 +1,7 @@
+import { useLocale } from 'next-intl';
+
 import { navItems } from '@/constants/constants';
 import { Link } from '@/i18n/routing';
-import { useLocale } from 'next-intl';
 
 export const NavigationMenu = () => {
   const locale = useLocale() as Locale;

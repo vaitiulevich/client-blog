@@ -1,7 +1,8 @@
 'use client';
 
-import { useRouter } from '@/i18n/routing';
 import { Button } from 'clients-blogs-ui-kit';
+
+import { useRouter } from '@/i18n/routing';
 
 interface ButtonNavigateProps {
   path: string;

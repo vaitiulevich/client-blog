@@ -1,8 +1,9 @@
 import { CircleIcon } from 'clients-blogs-ui-kit';
 import { SocialLinks } from '@components/socialLinks/socialLinks';
+import { Translation } from '@components/translation/Translation';
+
 import { Link } from '@/i18n/routing';
 import { fetchAuthorsWithLimit } from '@/api/authors';
-import { Translation } from '@components/translation/Translation';
 
 interface AuthorsListProps {
   limit: number;

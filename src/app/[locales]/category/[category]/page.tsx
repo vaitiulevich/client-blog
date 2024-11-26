@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import { useSearchParams, useRouter, useParams } from 'next/navigation';
-import { fetchPostsByQuery } from '@/api/posts';
 import { PostsList } from '@components/postsList/postsList';
+
 import { CategoryHeader } from '../_components/CategoryHeader';
 import { CategoryList } from '../_components/CategoryList';
 import { TagsList } from '../_components/TagsList';
 import { SearchPanel } from '../_components/SearchPanel';
+
+import { fetchPostsByQuery } from '@/api/posts';
 
 export default function CategoryPage() {
   const params = useParams();

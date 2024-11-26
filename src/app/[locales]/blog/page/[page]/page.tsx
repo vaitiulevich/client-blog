@@ -1,10 +1,11 @@
-import { fetchPostsPaginate } from '@/api/posts';
 import { PostsList } from '@components/postsList/postsList';
-import { BlogHeader } from '@/app/[locales]/blog/_components/BlogHeader';
 import { Pagination } from '@components/pagination/pagination';
-import { postsPerPage } from '@/constants/constants';
 import { CategoryList } from '@components/categoryList/categoryList';
 import { JoinSection } from '@components/joinSection/joinSection';
+
+import { postsPerPage } from '@/constants/constants';
+import { BlogHeader } from '@/app/[locales]/blog/_components/BlogHeader';
+import { fetchPostsPaginate } from '@/api/posts';
 import { Translation } from '@/components/translation/Translation';
 
 interface BlogPageProps {

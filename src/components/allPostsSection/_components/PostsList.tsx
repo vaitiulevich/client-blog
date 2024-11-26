@@ -1,6 +1,8 @@
-import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+
 import { PostListItem } from './PostListItem';
+
+import { Link } from '@/i18n/routing';
 interface PostsListProps {
   posts: Post[];
 }

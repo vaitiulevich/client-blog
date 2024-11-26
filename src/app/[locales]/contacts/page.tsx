@@ -1,6 +1,8 @@
 import { ContactForm } from '@components/contactForm/contactForm';
 import { useTranslations } from 'next-intl';
+
 import MapSection from './_components/MapSection';
+
 import { contactEmail, contactPhone } from '@/constants/contacts';
 import { CENTER_MAP } from '@/constants/map';
 

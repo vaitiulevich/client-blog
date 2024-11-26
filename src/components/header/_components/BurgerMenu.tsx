@@ -1,11 +1,12 @@
 'use client';
 import { useState } from 'react';
-import { navItems } from '@/constants/constants';
-import { Link } from '@/i18n/routing';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import close from '@assets/icons/close.png';
 import open from '@assets/icons/burger-menu.svg';
+
+import { Link } from '@/i18n/routing';
+import { navItems } from '@/constants/constants';
 import { LocaleSwitch } from '@/components/localeSwitcher/LocaleSwitcher';
 import { VideoModalButton } from '@/components/videoModalButton/videoModalButton';
 

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import arrowPrev from '@assets/icons/ArrowL.svg';
 import arrowNext from '@assets/icons/ArrowR.svg';
 import Image from 'next/image';
+
 import { fetchAuthorById } from '@/api/authors';
 import { AuthorInfo } from '@/app/[locales]/post/_components/AuthorInfo';
 

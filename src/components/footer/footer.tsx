@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { NavigationMenu } from '@components/navigationMenu/navigationMenu';
 import { SubscribeForm } from '@components/subscribeForm/subscribeForm';
 import { SocialLinks } from '@components/socialLinks/socialLinks';
+
 import { Link } from '@/i18n/routing';
 
 export const Footer = () => {

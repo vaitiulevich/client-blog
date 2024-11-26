@@ -1,5 +1,6 @@
-import { fetchPostsWithLimit } from '@/api/posts';
 import { RecomendedPostItem } from './_components/RecomendedPostItem';
+
+import { fetchPostsWithLimit } from '@/api/posts';
 import { limitOfRecomenderPosts } from '@/constants/constants';
 import { Translation } from '@/components/translation/Translation';
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Modal } from '@components/modal/Modal';
 import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
+
 import { linkToVideo } from '@/constants/constants';
 
 export const VideoModalButton = () => {

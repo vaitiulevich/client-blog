@@ -1,6 +1,7 @@
-import { countOfAllPosts } from '@/constants/constants';
 import { FeaturedPost } from './_components/FeaturedPost';
 import { PostsList } from './_components/PostsList';
+
+import { countOfAllPosts } from '@/constants/constants';
 import { fetchPostsWithLimit } from '@/api/posts';
 
 export const AllPostsSection = async () => {

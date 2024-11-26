@@ -1,7 +1,8 @@
-import banner from '@/../public/assets/introImg.png';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
+
+import banner from '@/../public/assets/introImg.png';
 
 export const ReasonsSection = () => {
   const t = useTranslations('aboutSection');

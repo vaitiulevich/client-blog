@@ -1,6 +1,7 @@
+import { PostInfoBlock } from '@components/postInfoBlock/postInfoBlock';
+
 import { fetchAuthorById } from '@/api/authors';
 import { fetchPostById } from '@/api/posts';
-import { PostInfoBlock } from '@components/postInfoBlock/postInfoBlock';
 
 export const Hero = async () => {
   const post = await fetchPostById(1);

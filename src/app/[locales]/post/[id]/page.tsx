@@ -1,9 +1,13 @@
+import Image from 'next/image';
+import { RecomendedPosts } from '@components/recomendedPosts/recomendedPosts';
+
+import { AuthorInfo } from '../_components/AuthorInfo';
+import { ContentPost } from '../_components/ContentPost';
+
 import { fetchAuthorById } from '@/api/authors';
 import { fetchPostById } from '@/api/posts';
-import { AuthorInfo } from '../_components/AuthorInfo';
-import Image from 'next/image';
-import { ContentPost } from '../_components/ContentPost';
-import { RecomendedPosts } from '@components/recomendedPosts/recomendedPosts';
+
+
 
 interface PostProps {
   params: Promise<{ id: string; locales: string }>;

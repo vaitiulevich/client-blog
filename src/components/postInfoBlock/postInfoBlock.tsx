@@ -1,7 +1,8 @@
 import { AuthorDate } from 'clients-blogs-ui-kit';
 import { useLocale, useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
+
+import { Link } from '@/i18n/routing';
 
 interface postInfoBlockProps {
   post: Post;

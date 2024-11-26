@@ -1,9 +1,10 @@
 'use client';
 
-import { locales } from '@/constants/constants';
 import { LocaleSwitcher } from 'clients-blogs-ui-kit';
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
+
+import { locales } from '@/constants/constants';
 
 export const LocaleSwitch = () => {
   const currentLocale = useLocale();

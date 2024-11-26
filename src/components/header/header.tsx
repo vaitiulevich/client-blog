@@ -2,7 +2,9 @@ import { useTranslations } from 'next-intl';
 import { NavigationMenu } from '@components/navigationMenu/navigationMenu';
 import { LocaleSwitch } from '@components/localeSwitcher/LocaleSwitcher';
 import { VideoModalButton } from '@components/videoModalButton/videoModalButton';
+
 import BurgerMenu from './_components/BurgerMenu';
+
 import { Link } from '@/i18n/routing';
 
 export const Header = () => {
