@@ -1,3 +1,4 @@
+import { serviceId, templateId, userId } from '@/constants/emailsender';
 import emailjs from 'emailjs-com';
 
 interface sendSubscribeEmailParams {
@@ -13,10 +14,6 @@ export const sendSubscribeContacts = async ({
   related,
   message,
 }: sendSubscribeEmailParams): Promise<void> => {
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_CONTACTS_TEMPLATE_ID!;
-  const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
-
   await emailjs.send(
     serviceId,
     templateId,

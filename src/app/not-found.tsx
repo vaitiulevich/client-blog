@@ -1,4 +1,4 @@
-import { ButtonNavigate } from '@app/components/buttonNavigate/buttonNavigate';
+import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
 import { useTranslations } from 'next-intl';
 
 export default function NotFound() {

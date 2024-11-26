@@ -2,7 +2,7 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { useRouter } from 'next/router';
 import { NextIntlClientProvider } from 'next-intl';
 import { mockMessages } from './mockMessages';
-import { SubscribeForm } from '@/app/components/subscribeForm/subscribeForm';
+import { SubscribeForm } from '@/components/subscribeForm/subscribeForm';
 import { sendSubscribeEmail } from '@/utils/sendSubscribeEmail';
 
 jest.mock('@/utils/sendSubscribeEmail', () => ({

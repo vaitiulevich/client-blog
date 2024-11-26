@@ -1,51 +1,40 @@
 import { countAuthorsHome } from '@/constants/constants';
-import { HrPanel } from '@app/components/hrPanel/hrPanel';
+import { HrPanel } from '@components/hrPanel/hrPanel';
 import { homeFilasofyKeys } from '@/constants/filasofy';
 import { useTranslations } from 'next-intl';
+import { LazySection } from '@components/LazySection/LazySection';
+import { Hero } from '@/components/hero/hero';
+import { AllPostsSection } from '@/components/allPostsSection/allPostsSection';
 import dynamic from 'next/dynamic';
-import { LazySection } from '@app/components/LazySection/LazySection';
 
-const LazyHero = dynamic(() =>
-  import('@app/components/hero/hero').then((mod) => mod.Hero)
-);
-
-const LazyAllPostsSection = dynamic(() =>
-  import('@app/components/allPostsSection/allPostsSection').then(
-    (mod) => mod.AllPostsSection
-  )
-);
 const LazyFilasofyPanel = dynamic(() =>
-  import('@app/components/filasofyPanel/filasofyPanel').then(
+  import('@components/filasofyPanel/filasofyPanel').then(
     (mod) => mod.FilasofyPanel
   )
 );
 const LazyCategoryList = dynamic(() =>
-  import('@app/components/categoryList/categoryList').then(
+  import('@components/categoryList/categoryList').then(
     (mod) => mod.CategoryList
   )
 );
 const LazyReasonsSection = dynamic(() =>
-  import('@app/components/reasonsSection/reasonsSection').then(
+  import('@components/reasonsSection/reasonsSection').then(
     (mod) => mod.ReasonsSection
   )
 );
 const LazyAuthorsList = dynamic(() =>
-  import('@app/components/authorsList/authorsList').then(
-    (mod) => mod.AuthorsList
-  )
+  import('@components/authorsList/authorsList').then((mod) => mod.AuthorsList)
 );
 const LazyFeaturedListSection = dynamic(() =>
-  import('@app/components/featuredListSection/featuredListSection').then(
+  import('@components/featuredListSection/featuredListSection').then(
     (mod) => mod.FeaturedListSection
   )
 );
 const LazyJoinSection = dynamic(() =>
-  import('@app/components/joinSection/joinSection').then(
-    (mod) => mod.JoinSection
-  )
+  import('@components/joinSection/joinSection').then((mod) => mod.JoinSection)
 );
 const LazyReviewSection = dynamic(() =>
-  import('@app/components/reviewSection/reviewSection').then(
+  import('@/components/reviewSection/reviewSection').then(
     (mod) => mod.ReviewSection
   )
 );
@@ -53,15 +42,12 @@ const LazyReviewSection = dynamic(() =>
 export default function Home() {
   const t = useTranslations('home');
 
-  return (
-    <div className="font-dark">
-      <LazySection>
-        <LazyHero />
-      </LazySection>
-      <LazySection>
-        <LazyAllPostsSection />
-      </LazySection>
-      <LazySection>
+  const sections = [
+    { id: 1, component: <Hero /> },
+    { id: 2, component: <AllPostsSection /> },
+    {
+      id: 3,
+      component: (
         <div className="wrapper-component flex flex-col items-end my-24">
           <div className="w-[70%]">
             <HrPanel />
@@ -75,29 +61,31 @@ export default function Home() {
             }}
           />
         </div>
-      </LazySection>
-
-      <LazySection>
+      ),
+    },
+    {
+      id: 4,
+      component: (
         <div className="wrapper-component my-24">
           <h2 className="text-2xl font-bold mb-12 text-center">
             {t('categoryTitle')}
           </h2>
           <LazyCategoryList />
         </div>
-      </LazySection>
-      <LazySection>
-        <LazyReasonsSection />
-      </LazySection>
-      <LazySection>
-        <LazyAuthorsList limit={countAuthorsHome} />
-        <LazyFeaturedListSection />
-      </LazySection>
-      <LazySection>
-        <LazyReviewSection />
-      </LazySection>
-      <LazySection>
-        <LazyJoinSection />
-      </LazySection>
+      ),
+    },
+    { id: 5, component: <LazyReasonsSection /> },
+    { id: 6, component: <LazyAuthorsList limit={countAuthorsHome} /> },
+    { id: 7, component: <LazyFeaturedListSection /> },
+    { id: 8, component: <LazyReviewSection /> },
+    { id: 9, component: <LazyJoinSection /> },
+  ];
+
+  return (
+    <div className="font-dark">
+      {sections.map((section) => (
+        <LazySection key={section.id}>{section.component}</LazySection>
+      ))}
     </div>
   );
 }

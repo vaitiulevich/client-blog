@@ -1,4 +1,4 @@
-import { ContactForm } from '@/app/components/contactForm/contactForm';
+import { ContactForm } from '@components/contactForm/contactForm';
 import { useTranslations } from 'next-intl';
 import MapSection from './_components/MapSection';
 import { contactEmail, contactPhone } from '@/constants/contacts';

@@ -4,6 +4,7 @@ export const CENTER_MAP = {
 };
 export const MAPBOX_STYLES = 'mapbox://styles/mapbox/streets-v11';
 export const MAPBOX_ZOOM = 6;
+export const accessToken = process.env.NEXT_PUBLIC_MAP_BOX_TOCKEN!;
 
 export const points = [
   {

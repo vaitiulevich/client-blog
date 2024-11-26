@@ -1,4 +1,4 @@
-import { tags } from '@/constants/tags';
+import { useTags } from '@/utils/hooks/useTags';
 import { useTranslations } from 'next-intl';
 
 interface TagsListProps {
@@ -8,9 +8,9 @@ interface TagsListProps {
 
 export const TagsList = ({ selectedTags, onChangeTags }: TagsListProps) => {
   const t = useTranslations('category');
+  const tags = useTags();
 
   const handleTagClick = (id: number) => {
-    console.log('', selectedTags);
     const currentTags = selectedTags.includes(id)
       ? selectedTags.filter((tag) => tag !== id)
       : [...selectedTags, id];

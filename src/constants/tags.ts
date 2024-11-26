@@ -1,8 +1,8 @@
 export const tags = [
-  { id: 1, title: 'Business' },
-  { id: 2, title: 'Experience' },
-  { id: 3, title: 'Screen' },
-  { id: 4, title: 'Technology' },
-  { id: 5, title: 'Marketing' },
-  { id: 6, title: 'Life' },
+  { id: 1, key: 'business' },
+  { id: 2, key: 'experience' },
+  { id: 3, key: 'screen' },
+  { id: 4, key: 'technology' },
+  { id: 5, key: 'marketing' },
+  { id: 6, key: 'life' },
 ];

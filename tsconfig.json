@@ -24,6 +24,8 @@
       "@app/*": ["./src/app/*"],
       "@utils/*": ["./src/utils/*"],
       "@assets/*": ["./public/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
       "@api/*": ["./src/api*"]
     }
   },

@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import banner from '@/../public/assets/introImg.png';
-import { HrPanel } from '@app/components/hrPanel/hrPanel';
-import { FilasofyPanel } from '@/app/components/filasofyPanel/filasofyPanel';
+import { HrPanel } from '@components/hrPanel/hrPanel';
+import { FilasofyPanel } from '@components/filasofyPanel/filasofyPanel';
 import { filasofyKeys, metricsKeys } from '@/constants/filasofy';
 
 export const IntroSection = () => {

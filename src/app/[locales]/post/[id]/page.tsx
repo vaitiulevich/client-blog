@@ -3,13 +3,13 @@ import { fetchPostById } from '@/api/posts';
 import { AuthorInfo } from '../_components/AuthorInfo';
 import Image from 'next/image';
 import { ContentPost } from '../_components/ContentPost';
-import { RecomendedPosts } from '@/app/components/recomendedPosts/recomendedPosts';
+import { RecomendedPosts } from '@components/recomendedPosts/recomendedPosts';
 
-export default async function Post({
-  params,
-}: {
+interface PostProps {
   params: Promise<{ id: string; locales: string }>;
-}) {
+}
+
+export default async function Post({ params }: PostProps) {
   const { id, locales } = await params;
   const { title, category, authorId, publishDate, banner, content } =
     await fetchPostById(+id);

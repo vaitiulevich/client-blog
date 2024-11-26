@@ -1,5 +1,5 @@
 import { fetchPostById } from '@/api/posts';
-import { AuthorDatePanel } from '@/app/components/AuthorDatePanel/AuthorDatePanel';
+import { AuthorDatePanel } from '@components/AuthorDatePanel/AuthorDatePanel';
 import Image from 'next/image';
 import { BlogHeadline } from './BlogHeadline';
 import { BlogButton } from './BlogButton';

@@ -8,15 +8,16 @@ const createJestConfig = nextJest({
 const config: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
-  // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testMatch: ['<rootDir>/__tests__/*.test.{ts,tsx}'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1', // Maps @/ to src/
-    '^@app/(.*)$': '<rootDir>/src/app/$1', // Maps @app/ to src/app/
-    '^@utils/(.*)$': '<rootDir>/src/utils/$1', // Maps @utils/ to src/utils/
-    '^@assets/(.*)$': '<rootDir>/public/assets/$1', // Maps @assets/ to public/assets/
-    '^@api/(.*)$': '<rootDir>/src/api/$1', // Maps @api/ to src/api/
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@app/(.*)$': '<rootDir>/src/app/$1',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+    '^@assets/(.*)$': '<rootDir>/public/assets/$1',
+    '^@api/(.*)$': '<rootDir>/src/api/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
   },
 };
 

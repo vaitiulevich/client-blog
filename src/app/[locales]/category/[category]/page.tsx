@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, useRouter, useParams } from 'next/navigation';
 import { fetchPostsByQuery } from '@/api/posts';
-import { PostsList } from '@/app/components/postsList/postsList';
+import { PostsList } from '@components/postsList/postsList';
 import { CategoryHeader } from '../_components/CategoryHeader';
 import { CategoryList } from '../_components/CategoryList';
 import { TagsList } from '../_components/TagsList';
@@ -20,9 +20,10 @@ export default function CategoryPage() {
 
   useEffect(() => {
     const tags = searchParams.get('tags') || '';
-    setSelectedTags(
-      tags ? tags.split(',').map((tag) => Number(tag.trim())) : []
-    );
+    const selectedTags = tags
+      ? tags.split(',').map((tag) => Number(tag.trim()))
+      : [];
+    setSelectedTags(selectedTags);
   }, [searchParams]);
 
   useEffect(() => {
@@ -49,7 +50,6 @@ export default function CategoryPage() {
   };
 
   const handleSearchChange = (tag: number) => {
-    console.log('', tag);
     const newParams = new URLSearchParams();
     newParams.set('tags', `${tag}`);
 

@@ -1,6 +1,7 @@
 type Article = {
+  id: number;
   subtitle: string;
-  articleP: string[];
+  articleP: { id: number; text: string }[];
 };
 
 type Post = {

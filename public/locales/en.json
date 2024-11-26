@@ -207,5 +207,18 @@
   "notFound": {
     "title": "Could Not Found",
     "returnButtonTitle": "Return Home"
+  },
+  "search": {
+    "placeholder": "Search",
+    "buttonTitle": "Search",
+    "noResults": "no results"
+  },
+  "tags": {
+    "business": "Business",
+    "experience": "Experience",
+    "screen": "Screen",
+    "technology": "Technology",
+    "marketing": "Marketing",
+    "life": "Life"
   }
 }

@@ -40,7 +40,7 @@
     }
   },
   "author": {
-    "title": "Привет, Я {name} и добро пожаловать в мой блог"
+    "title": "Прривет, Я {name} и добро пожаловать в мой блог"
   },
   "footer": {
     "logoTitle": "Modsen Client Blog",
@@ -207,5 +207,18 @@
   "notFound": {
     "title": "Страница не найдена",
     "returnButtonTitle": "Вернуться на главную"
+  },
+  "search": {
+    "placeholder": "Поиск по тегам",
+    "buttonTitle": "Поиск",
+    "noResults": "Ничего не найдено"
+  },
+  "tags": {
+    "business": "Бизнес",
+    "experience": "Опыт",
+    "screen": "Экран",
+    "technology": "Технология",
+    "marketing": "Маркетинг",
+    "life": "Жизнь"
   }
 }

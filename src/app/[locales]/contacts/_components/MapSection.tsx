@@ -2,7 +2,12 @@
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import { MAPBOX_STYLES, MAPBOX_ZOOM, points } from '@/constants/map';
+import {
+  accessToken,
+  MAPBOX_STYLES,
+  MAPBOX_ZOOM,
+  points,
+} from '@/constants/map';
 
 interface BankMapProps {
   center: {
@@ -11,7 +16,7 @@ interface BankMapProps {
   };
 }
 
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAP_BOX_TOCKEN!;
+mapboxgl.accessToken = accessToken;
 
 const MapSection = ({ center }: BankMapProps) => {
   const mapContainer = useRef<HTMLDivElement>(null);
