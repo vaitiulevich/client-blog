@@ -11,11 +11,6 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    # runs-on: ${{ matrix.os }}
-
-    # strategy:
-    #   matrix:
-    #     os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Checkout code
@@ -25,16 +20,3 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-
-      # - name: Install dependencies
-      #   run: yarn install
-
-      # - name: Run tests
-      #   run: yarn test
-
-      # - name: Build the application
-      #   run: yarn build
-
-      # - name: Deploy
-      #   run: |
-      #     # Добавьте команды для развертывания

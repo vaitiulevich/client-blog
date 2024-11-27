@@ -3,19 +3,14 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 
+import { BankMapProps } from '../Contacts.types';
+
 import {
   accessToken,
   MAPBOX_STYLES,
   MAPBOX_ZOOM,
   points,
 } from '@/constants/map';
-
-interface BankMapProps {
-  center: {
-    lng: number;
-    lat: number;
-  };
-}
 
 mapboxgl.accessToken = accessToken;
 

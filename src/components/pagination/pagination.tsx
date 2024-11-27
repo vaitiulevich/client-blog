@@ -1,11 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { Link } from '@/i18n/routing';
+import { PaginationProps } from './Pagination.types';
 
-interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-}
+import { Link } from '@/i18n/routing';
 
 export const Pagination = ({ currentPage, totalPages }: PaginationProps) => {
   const t = useTranslations('pagination');

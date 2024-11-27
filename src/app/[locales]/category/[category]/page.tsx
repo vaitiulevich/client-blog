@@ -10,6 +10,7 @@ import { TagsList } from '../_components/TagsList';
 import { SearchPanel } from '../_components/SearchPanel';
 
 import { fetchPostsByQuery } from '@/api/posts';
+import { Post } from '@/api/types/post';
 
 export default function CategoryPage() {
   const params = useParams();

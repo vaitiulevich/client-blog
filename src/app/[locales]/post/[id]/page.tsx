@@ -3,15 +3,10 @@ import { RecomendedPosts } from '@components/recomendedPosts/recomendedPosts';
 
 import { AuthorInfo } from '../_components/AuthorInfo';
 import { ContentPost } from '../_components/ContentPost';
+import { PostProps } from '../Post.types';
 
 import { fetchAuthorById } from '@/api/authors';
 import { fetchPostById } from '@/api/posts';
-
-
-
-interface PostProps {
-  params: Promise<{ id: string; locales: string }>;
-}
 
 export default async function Post({ params }: PostProps) {
   const { id, locales } = await params;

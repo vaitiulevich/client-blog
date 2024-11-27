@@ -1,8 +1,7 @@
 import { Fragment } from 'react';
 
-interface ContentPostProps {
-  content: Article[];
-}
+import { ContentPostProps } from '../Post.types';
+
 export const ContentPost = ({ content }: ContentPostProps) => {
   return (
     <div className="doublewrap-component">

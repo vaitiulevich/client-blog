@@ -1,12 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-export const Translation = ({
-  section,
-  name,
-}: {
-  section: string;
-  name: string;
-}) => {
+import { TranslationProps } from './Translation.types';
+
+export const Translation = ({ section, name }: TranslationProps) => {
   const t = useTranslations(section);
   return <>{t(name)}</>;
 };

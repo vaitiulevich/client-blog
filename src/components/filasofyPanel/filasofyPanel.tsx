@@ -1,12 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { Link } from '@/i18n/routing';
+import { FilasofyPanelProps } from './FilasofyPanel.types';
 
-interface FilasofyPanelProps {
-  filasofyKeys: string[];
-  translationPath: string;
-  firstLink?: { text: string; href: string };
-}
+import { Link } from '@/i18n/routing';
 
 export const FilasofyPanel = ({
   filasofyKeys,

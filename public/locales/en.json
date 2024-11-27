@@ -220,5 +220,20 @@
     "technology": "Technology",
     "marketing": "Marketing",
     "life": "Life"
+  },
+  "authorDate": {
+    "noAuthorText": "Comunity"
+  },
+  "validation": {
+    "fullName": {
+      "min": "Must be 2 or more characters long",
+      "max": "Must be 30 or fewer characters long"
+    },
+    "email": "Invalid email address",
+    "related": "Selection is required",
+    "message": {
+      "min": "Message is required",
+      "max": "Must be 500 or fewer characters long"
+    }
   }
 }

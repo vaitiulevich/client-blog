@@ -1,11 +1,11 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
+import { CategoryListProps } from '../CategoryPage.types';
+
 import { Link } from '@/i18n/routing';
 import { useCategories } from '@/utils/hooks/useCategories';
-interface CategoryListProps {
-  selectCategory: number;
-}
+
 export const CategoryList = ({ selectCategory }: CategoryListProps) => {
   const t = useTranslations('category');
   const categories = useCategories();

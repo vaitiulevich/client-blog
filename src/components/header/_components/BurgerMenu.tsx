@@ -45,6 +45,7 @@ const BurgerMenu = () => {
                 {item.label[locale]}
               </Link>
             ))}
+
             <VideoModalButton />
           </nav>
         </div>

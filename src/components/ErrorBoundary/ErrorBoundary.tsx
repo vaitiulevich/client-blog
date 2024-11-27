@@ -2,14 +2,7 @@
 import { Component } from 'react';
 import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
 
-interface ErrorBoundaryProps {
-  children: React.ReactNode;
-}
-
-interface ErrorBoundaryState {
-  hasError: boolean;
-  errorInfo?: string;
-}
+import { ErrorBoundaryProps, ErrorBoundaryState } from './ErrorBoundary.types';
 
 class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps) {

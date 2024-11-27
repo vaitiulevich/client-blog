@@ -1,8 +1,6 @@
-import { useCategories } from '@/utils/hooks/useCategories';
+import { CategoryHeaderProps } from '../CategoryPage.types';
 
-interface CategoryHeaderProps {
-  categoryId: number;
-}
+import { useCategories } from '@/utils/hooks/useCategories';
 
 export const CategoryHeader = ({ categoryId }: CategoryHeaderProps) => {
   const categories = useCategories();

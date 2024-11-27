@@ -2,13 +2,10 @@ import { AuthorDate } from 'clients-blogs-ui-kit';
 import { useLocale, useTranslations } from 'next-intl';
 import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
 
+import { postInfoBlockProps } from './PostInfoBlock.types';
+
 import { Link } from '@/i18n/routing';
 
-interface postInfoBlockProps {
-  post: Post;
-  authorName: string;
-  authorId: number;
-}
 export const PostInfoBlock = ({
   post,
   authorName,

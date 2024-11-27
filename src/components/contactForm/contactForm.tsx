@@ -14,14 +14,16 @@ import { z } from 'zod';
 import { Popup } from '@components/popup/popup';
 
 import { sendSubscribeContacts } from '@/utils/sendSubscribeContacts';
-import { contactsSchema } from '@/schemas';
 import { useRelatedList } from '@/utils/hooks/useRelatedList';
 import { PopupType } from '@/types/enums';
+import { useValidationSchemaContact } from '@/utils/hooks/useValidationSchemaContact';
 
-type ContactFormData = z.infer<typeof contactsSchema>;
+type ContactFormData = z.infer<ReturnType<typeof useValidationSchemaContact>>;
 
 export const ContactForm = () => {
   const t = useTranslations('contacts.formContact');
+  const contactsSchema = useValidationSchemaContact();
+
   const relatedList = useRelatedList();
   const [popup, setPopup] = useState<{
     message: string | null;

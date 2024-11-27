@@ -1,13 +1,8 @@
 import { useEffect } from 'react';
 
-import { PopupType } from '@/types/enums';
+import { PopupProps } from './Popup.types';
 
-interface PopupProps {
-  isOpen: boolean;
-  message: string | null;
-  type: PopupType;
-  onClose: () => void;
-}
+import { PopupType } from '@/types/enums';
 
 export const Popup = ({ isOpen, message, type, onClose }: PopupProps) => {
   useEffect(() => {

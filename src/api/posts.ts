@@ -1,5 +1,6 @@
 import { endpoints } from '@/constants/endpoints';
 import { apiRequest } from './apiRequest';
+import { Post } from './types/post';
 
 export const fetchPosts = async (): Promise<Post[]> => {
   const response = await apiRequest(endpoints.posts);

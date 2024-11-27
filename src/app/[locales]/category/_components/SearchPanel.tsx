@@ -3,13 +3,11 @@ import { ChangeEvent, useState } from 'react';
 import { Button } from 'clients-blogs-ui-kit';
 import { useTranslations } from 'next-intl';
 
+import { SearchPanelProps } from '../CategoryPage.types';
+
 import { useTags } from '@/utils/hooks/useTags';
 
-export const SearchPanel = ({
-  handleSearchChange,
-}: {
-  handleSearchChange: (tag: number) => void;
-}) => {
+export const SearchPanel = ({ handleSearchChange }: SearchPanelProps) => {
   const t = useTranslations('search');
   const tags = useTags();
   const [searchText, setSearchText] = useState('');

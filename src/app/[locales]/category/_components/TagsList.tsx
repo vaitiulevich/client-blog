@@ -1,11 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { useTags } from '@/utils/hooks/useTags';
+import { TagsListProps } from '../CategoryPage.types';
 
-interface TagsListProps {
-  selectedTags: number[];
-  onChangeTags: (tags: number[]) => void;
-}
+import { useTags } from '@/utils/hooks/useTags';
 
 export const TagsList = ({ selectedTags, onChangeTags }: TagsListProps) => {
   const t = useTranslations('category');

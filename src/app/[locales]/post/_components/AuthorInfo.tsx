@@ -1,16 +1,9 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import { Link } from '@/i18n/routing';
+import { AuthorInfoProps } from '../Post.types';
 
-interface AuthorInfoProps {
-  authorName: string;
-  date?: Date;
-  from?: string;
-  authorId: number;
-  avatar: string;
-  locale?: string;
-}
+import { Link } from '@/i18n/routing';
 
 export const AuthorInfo = ({
   authorName,

@@ -1,9 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 
-interface LazySectionProps {
-  children: React.ReactNode;
-}
+import { LazySectionProps } from './LazySection.types';
 
 export const LazySection: React.FC<LazySectionProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);

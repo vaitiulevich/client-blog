@@ -1,5 +1,6 @@
 import { endpoints } from '@/constants/endpoints';
 import { apiRequest } from './apiRequest';
+import { Author } from './types/author';
 
 export const fetchAuthorById = async (id: number): Promise<Author> => {
   const url = `${endpoints.authors}/${id}`;

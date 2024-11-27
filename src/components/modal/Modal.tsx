@@ -1,13 +1,8 @@
 'use client';
 
-import { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  children: ReactNode;
-}
+import { ModalProps } from './Modal.types';
 
 export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   if (!isOpen) return null;

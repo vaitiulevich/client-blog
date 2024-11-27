@@ -1,8 +1,6 @@
 import { PostListItem } from './_components/PostListItem';
+import { PostsListProps } from './PostsList.types';
 
-interface PostsListProps {
-  posts: Post[];
-}
 export const PostsList = ({ posts }: PostsListProps) => {
   if (!posts.length) {
     return (

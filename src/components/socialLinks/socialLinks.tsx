@@ -1,14 +1,9 @@
 import { SocialIcon } from 'clients-blogs-ui-kit';
 
+import { SocialLinksProps } from './SocialLinks.types';
+
 import { Link } from '@/i18n/routing';
 
-interface SocialLinksProps {
-  instagram?: string;
-  twitter?: string;
-  linkedin?: string;
-  facebook?: string;
-  bgColor?: 'light' | 'dark';
-}
 export const SocialLinks = ({
   instagram,
   twitter,

@@ -17,7 +17,7 @@ export const ReasonsSection = () => {
           priority
         />
       </div>
-      <div className="absolute h-[80%] bg-lightBG z-3 w-[40%] right-[7rem] p-14 flex flex-col justify-between items-start gap-4 max-lg:p-8 max-md:p-2 max-md:static max-md:w-full max-md:right-0">
+      <div className="absolute h-[80%] bg-lightBG z-3 w-[45%] right-[7rem] p-14 flex flex-col justify-between items-start gap-4 max-lg:p-8 max-md:p-2 max-md:static max-md:w-full max-md:right-0">
         <p className="uppercase font-semibold">{t('upperHeadline')}</p>
         <h3 className="font-bold text-4xl">{t('headline')}</h3>
         <p className="text-grey text-sm">{t('description')}</p>

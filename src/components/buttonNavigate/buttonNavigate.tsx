@@ -2,12 +2,9 @@
 
 import { Button } from 'clients-blogs-ui-kit';
 
-import { useRouter } from '@/i18n/routing';
+import { ButtonNavigateProps } from './ButtonNavigate.types';
 
-interface ButtonNavigateProps {
-  path: string;
-  text: string;
-}
+import { useRouter } from '@/i18n/routing';
 
 export const ButtonNavigate = ({ path, text }: ButtonNavigateProps) => {
   const router = useRouter();

@@ -3,14 +3,12 @@ import { Pagination } from '@components/pagination/pagination';
 import { CategoryList } from '@components/categoryList/categoryList';
 import { JoinSection } from '@components/joinSection/joinSection';
 
+import { BlogPageProps } from '../../Blog.types';
+
 import { postsPerPage } from '@/constants/constants';
 import { BlogHeader } from '@/app/[locales]/blog/_components/BlogHeader';
 import { fetchPostsPaginate } from '@/api/posts';
 import { Translation } from '@/components/translation/Translation';
-
-interface BlogPageProps {
-  params: Promise<{ page: number }>;
-}
 
 export default async function Blog({ params }: BlogPageProps) {
   const currentPage = (await params).page;

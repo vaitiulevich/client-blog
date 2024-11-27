@@ -1,14 +1,12 @@
 import { PostsList } from '@components/postsList/postsList';
 import { AuthorInfo } from '@app/[locales]/author/_components/AuthorInfo';
 
+import { AuthorPageProps } from '../AuthorPage.types';
+
 import { fetchAuthorById } from '@/api/authors';
 import { fetchAuthorsPosts } from '@/api/posts';
 
-export default async function AuthorPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function AuthorPage({ params }: AuthorPageProps) {
   const { id } = await params;
   const author = await fetchAuthorById(+id);
   const posts = await fetchAuthorsPosts(+id);

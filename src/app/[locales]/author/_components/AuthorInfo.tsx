@@ -2,13 +2,11 @@ import { HrPanel } from '@components/hrPanel/hrPanel';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
+import { AuthorHeaderProps } from '../AuthorPage.types';
+
 import TypingAnimation from './TypingAnimation';
 
 import { SocialLinks } from '@/components/socialLinks/socialLinks';
-
-interface AuthorHeaderProps {
-  author: Author;
-}
 
 export const AuthorInfo = ({ author }: AuthorHeaderProps) => {
   const t = useTranslations('author');

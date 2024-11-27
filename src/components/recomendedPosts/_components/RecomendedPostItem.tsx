@@ -1,11 +1,10 @@
 import Image from 'next/image';
 
+import { RecomendedPostItemProps } from '../RecomendedPosts.types';
+
 import { Link } from '@/i18n/routing';
 import { AuthorDatePanel } from '@/components/AuthorDatePanel/AuthorDatePanel';
 
-interface RecomendedPostItemProps {
-  post: Post;
-}
 export const RecomendedPostItem = ({ post }: RecomendedPostItemProps) => {
   const { title, authorId, publishDate, content, banner, id } = post;
   const { subtitle } = content[0];

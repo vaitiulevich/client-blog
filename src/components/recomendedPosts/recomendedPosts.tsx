@@ -1,12 +1,9 @@
 import { RecomendedPostItem } from './_components/RecomendedPostItem';
+import { RecomendedPostsProps } from './RecomendedPosts.types';
 
 import { fetchPostsWithLimit } from '@/api/posts';
 import { limitOfRecomenderPosts } from '@/constants/constants';
 import { Translation } from '@/components/translation/Translation';
-
-interface RecomendedPostsProps {
-  excludedPostId?: number;
-}
 
 export const RecomendedPosts = async ({
   excludedPostId,

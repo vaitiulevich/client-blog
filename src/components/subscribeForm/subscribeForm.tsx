@@ -9,13 +9,13 @@ import { useState } from 'react';
 import { Popup } from '@components/popup/popup';
 
 import { sendSubscribeEmail } from '@/utils/sendSubscribeEmail';
-import { emailSchema } from '@/schemas';
 import { PopupType } from '@/types/enums';
+import { useValidationSchemaFollow } from '@/utils/hooks/useValidationSchemaFollow';
 
-type EmailFormData = z.infer<typeof emailSchema>;
-
+type EmailFormData = z.infer<ReturnType<typeof useValidationSchemaFollow>>;
 export const SubscribeForm = () => {
   const t = useTranslations('footer.formSubscribe');
+  const emailSchema = useValidationSchemaFollow();
   const {
     register,
     handleSubmit,
@@ -66,13 +66,16 @@ export const SubscribeForm = () => {
           disabled={isSubmitting}
           error={errors.email?.message}
         />
-        <Button
-          type="submit"
-          label={
-            isSubmitting ? t('loadSubmitButtonTitle') : t('submitButtonTitle')
-          }
-          disabled={isSubmitting}
-        />
+        <div className="w-[8rem]">
+          <Button
+            size="full"
+            type="submit"
+            label={
+              isSubmitting ? t('loadSubmitButtonTitle') : t('submitButtonTitle')
+            }
+            disabled={isSubmitting}
+          />
+        </div>
       </form>
     </div>
   );

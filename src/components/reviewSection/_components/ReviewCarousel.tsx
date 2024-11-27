@@ -4,12 +4,11 @@ import arrowPrev from '@assets/icons/ArrowL.svg';
 import arrowNext from '@assets/icons/ArrowR.svg';
 import Image from 'next/image';
 
+import { ReviewCarouselProps } from '../ReviewSection.types';
+
 import { fetchAuthorById } from '@/api/authors';
 import { AuthorInfo } from '@/app/[locales]/post/_components/AuthorInfo';
-
-interface ReviewCarouselProps {
-  reviews: Review[];
-}
+import { Author } from '@/api/types/author';
 
 export const ReviewCarousel = ({ reviews }: ReviewCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);

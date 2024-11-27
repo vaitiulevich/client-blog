@@ -2,12 +2,10 @@ import { CircleIcon } from 'clients-blogs-ui-kit';
 import { SocialLinks } from '@components/socialLinks/socialLinks';
 import { Translation } from '@components/translation/Translation';
 
+import { AuthorsListProps } from './AuthorsList.types';
+
 import { Link } from '@/i18n/routing';
 import { fetchAuthorsWithLimit } from '@/api/authors';
-
-interface AuthorsListProps {
-  limit: number;
-}
 
 export const AuthorsList = async ({ limit }: AuthorsListProps) => {
   const data = await fetchAuthorsWithLimit(limit);
