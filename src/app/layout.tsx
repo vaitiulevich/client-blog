@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Client blog',
   description: 'Client blog',
   icons: {
-    icon: '/icon.ico',
+    icon: './favicon.ico',
   },
 };
 
@@ -14,7 +14,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.ico" sizes="any" />
+        <link rel="icon" href="./favicon.ico" sizes="any" />
         <title>Client blog</title>
       </head>
       <body>
