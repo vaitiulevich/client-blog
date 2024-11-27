@@ -3,11 +3,8 @@ import { AuthorDatePanel } from '@components/AuthorDatePanel/AuthorDatePanel';
 import { useTranslations } from 'next-intl';
 import { ButtonNavigate } from '@components/buttonNavigate/buttonNavigate';
 
-import { Post } from '@/api/types/post';
+import { FeaturedPostProps } from '../AllPostsSection.types';
 
-interface FeaturedPostProps {
-  post: Post;
-}
 export const FeaturedPost = ({ post }: FeaturedPostProps) => {
   const t = useTranslations('allPosts.featuredPost');
   const { banner, title, authorId, publishDate, content, id } = post;

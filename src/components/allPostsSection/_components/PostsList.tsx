@@ -1,11 +1,11 @@
 import { useTranslations } from 'next-intl';
 
+import { PostsListProps } from '../AllPostsSection.types';
+
 import { PostListItem } from './PostListItem';
 
 import { Link } from '@/i18n/routing';
-interface PostsListProps {
-  posts: Post[];
-}
+
 export const PostsList = ({ posts }: PostsListProps) => {
   const t = useTranslations('allPosts.postList');
   return (

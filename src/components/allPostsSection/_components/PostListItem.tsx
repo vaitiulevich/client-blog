@@ -1,9 +1,8 @@
+import { PostListItemProps } from '../AllPostsSection.types';
+
 import { AuthorDatePanel } from '@/components/AuthorDatePanel/AuthorDatePanel';
 import { Link } from '@/i18n/routing';
 
-interface PostListItemProps {
-  post: Post;
-}
 export const PostListItem = async ({ post }: PostListItemProps) => {
   const { title, publishDate, id } = post;
 
